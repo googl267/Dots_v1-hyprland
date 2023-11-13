@@ -97,5 +97,5 @@ I tried to make it as simple as possible to define `layouts` and `colors`. Swapp
 - A seperate repo with tons of everyday applications like a DE, Might learn NIX for this
 
 # Credits
-**Sharp-GTK:** [(made by)](https://github.com/myagko) the gtk theme that saved me from needing to make my own, however the repo no longer exists :( | [**Simple Fox:**](https://github.com/migueravila/SimpleFox) slightly modified for my waterfox theme | [**Zabooby
+**Sharp-GTK:** [(made by)](https://github.com/myagko) the gtk theme that saved me from needing to make my own | [**Simple Fox:**](https://github.com/migueravila/SimpleFox) slightly modified for my waterfox theme | [**Zabooby
  MPV:**](https://github.com/Zabooby/mpv-config) this amazing MPV config I stole | [**Boo SDDM:**](https://github.com/PROxZIMA/boo-sddm) for the sddm theme
