@@ -1,5 +1,5 @@
 # Sharp GTK
-I would give credit if I knew who made it but unfortunity the original repo no longer exists :(
+This amazing GTK theme made by [**Myagko**](https://github.com/myagko), however the original repo no longer exists
 
 ## Screenshots
 
