@@ -49,9 +49,9 @@ I tried to exclude as many programs as I could that arent core to making things 
 <details open> 
   <summary><h4>Fonts</h4></summary>
   
-  * jetbrainsmono nerd font
+  * jetbrains nerd font
   * firacode nerd font
-  * gohufont nerd
+  * bigblueterm437 nerd font
   * hermit nerd font
 </details>
 
@@ -77,7 +77,10 @@ I tried to exclude as many programs as I could that arent core to making things 
 </details>
 
 ## Easy layout and colors -land
-I tried to make it as simple as possible to define `layouts` and `colors`. Swapping color scemes or layout is as easy as running the `swapper.sh` script!
+> [!NOTE]  
+> This has been my very first time scripting ANYTHING, so my scripts are very very very messy! However I found a cool tool called [flavours](https://github.com/misterio77/flavours) and will be replacing my color scripts with that
+>
+I tried to make it as simple as possible to define `layouts` and `colors`. Swapping color scemes or layout is as easy as running the `swapper.sh` script
 
 ## Todo
 - [ ] replace color change script with [flavours](https://github.com/misterio77/flavours)
