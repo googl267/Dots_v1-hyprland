@@ -1,5 +1,7 @@
 # Hyprland Dots V1
-Im tired of not being able to use whatever colors I want for all my programs! Down with having tons of diffrent config files to edit! My dots use bash scripts for easy switching of colors and layouts (and soon will use [flavours](https://github.com/misterio77/flavours) so you only need a base16 theme)
+Im tired of not being able to use whatever colors I want for all my programs! Down with having tons of diffrent config files to edit! My dots use bash scripts for easy switching of colors and layouts separately
+> [!NOTE]  
+> This has been my very first time both using arch and scripting ANYTHING, so my scripts are very very very messy! However I found a cool tool called [flavours](https://github.com/misterio77/flavours) and will be replacing my color scripts with that. This will also include theming for neovim and kitty
 
 ## Screenshots
 ### outline
@@ -11,8 +13,8 @@ Im tired of not being able to use whatever colors I want for all my programs! Do
 ### minimal
 
 
-## Minimal bloat
-I tried to exclude as many programs as I could that arent core to making things look nice. Most applications are also easy to uninstall/replace
+## Experiance
+I use this setup on both my laptop and my desktop and try to keep it as minimal as possible. However you can add your own program configs in .config/hypr/theme/layouts and change the script (will make it easier in the future I promise)
 
 ### Programs
 <details open> 
@@ -22,6 +24,7 @@ I tried to exclude as many programs as I could that arent core to making things 
   |:-|:-|
   |**Booting** | playmouth and sddm |
   |**Term** | kitty |
+  |**Fetch** | pfetch |
   |**File Manager** | lf |
   |**Text Editor** | neovim with nvchad |
   |**Image Viewer** | qimgv |
@@ -42,6 +45,7 @@ I tried to exclude as many programs as I could that arent core to making things 
   |**Wallpaper** |swww|
   |**Icons** |papirus|
   |**GTK** |sharp-gtk|
+  |**Cursors** |breezex|
   |**Eyedropper**|hyprpicker|
   |**Screenshot**|grim/slurp|
 </details>
@@ -73,17 +77,17 @@ I tried to exclude as many programs as I could that arent core to making things 
   * blueman
   * tlp
   * swayidle
-  * breezex-cursor-theme
 </details>
 
 ## Easy layout and colors -land
 > [!NOTE]  
-> This has been my very first time scripting ANYTHING, so my scripts are very very very messy! However I found a cool tool called [flavours](https://github.com/misterio77/flavours) and will be replacing my color scripts with that
->
+> Color script will be replaced with [flavours](https://github.com/misterio77/flavours) and include kitty and neovim
+> 
 I tried to make it as simple as possible to define `layouts` and `colors`. Swapping color scemes or layout is as easy as running the `swapper.sh` script
 
 ## Todo
 - [ ] replace color change script with [flavours](https://github.com/misterio77/flavours)
+- [ ] rework layout script
 
 #### V2
 - [ ] give the repo a cool name
@@ -96,8 +100,8 @@ I tried to make it as simple as possible to define `layouts` and `colors`. Swapp
 - [ ] cleanup scripts
 - [ ] install script
 
-### Bloat relese
-- A seperate repo with tons of everyday applications like a DE, Might learn NIX for this
+### NixOS
+- [ ] if people like this repo I'll make a NixOS version that has all my fav programs included
 
 # Credits
 **Sharp-GTK:** [(made by)](https://github.com/myagko) the gtk theme that saved me from needing to make my own | [**Simple Fox:**](https://github.com/migueravila/SimpleFox) slightly modified for my waterfox theme | [**Zabooby
