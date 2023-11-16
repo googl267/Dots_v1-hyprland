@@ -17,6 +17,20 @@ Im tired of not being able to use whatever colors I want for all my programs! Do
 I use this setup on both my laptop and my desktop and try to keep it as minimal as possible. However you can add your own program configs in .config/hypr/theme/layouts and change the script (will make it easier in the future I promise)
 
 ### Programs
+#### Themed Programs
+- [X] greeter
+- [X] hyprland
+- [X] bar
+- [X] menu
+- [X] notifications
+- [X] lockscreen
+- [X] osd
+- [X] wallpaper
+- [X] gtk
+- [ ] terminal
+- [ ] editor
+- [ ] boot screen
+
 <details open> 
   <summary><h4>Applications</h4></summary>
   
@@ -42,7 +56,7 @@ I use this setup on both my laptop and my desktop and try to keep it as minimal 
   |**Notifs** |sway-nc|
   |**Lock** |swaylock-effects|
   |**OSD** |wob|
-  |**Wallpaper** |swww|
+  |**Wallpaper** |hyprpaper|
   |**Icons** |papirus|
   |**GTK** |sharp-gtk|
   |**Cursors** |breezex|
@@ -91,9 +105,9 @@ I tried to make it as simple as possible to define `layouts` and `colors`. Swapp
 
 #### V2
 - [ ] give the repo a cool name
-- [ ] Swap swaync/wob/etc with eww or ags
+- [ ] replace everything with eww or ags
 - [ ] make fire/waterfox theme + startpage
-- [ ] add Sharp-GTK variants
+- [ ] remake Sharp-GTK theme to use base16
 
 #### V3
 - [ ] simple GUI for changing colors/layout script
