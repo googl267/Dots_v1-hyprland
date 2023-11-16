@@ -26,7 +26,8 @@ I use this setup on both my laptop and my desktop and try to keep it as minimal 
 - [X] lockscreen
 - [X] osd
 - [X] wallpaper
-- [X] gtk
+- [X] gtk / qt
+- [ ] browser
 - [ ] terminal
 - [ ] editor
 - [ ] boot screen
@@ -105,7 +106,7 @@ I tried to make it as simple as possible to define `layouts` and `colors`. Swapp
 
 #### V2
 - [ ] give the repo a cool name
-- [ ] replace everything with eww or ags
+- [ ] ! replace everything with eww or ags
 - [ ] make fire/waterfox theme + startpage
 - [ ] remake Sharp-GTK theme to use base16
 
@@ -119,4 +120,4 @@ I tried to make it as simple as possible to define `layouts` and `colors`. Swapp
 
 # Credits
 **Sharp-GTK:** [(made by)](https://github.com/myagko) the gtk theme that saved me from needing to make my own | [**Simple Fox:**](https://github.com/migueravila/SimpleFox) slightly modified for my waterfox theme | [**Zabooby
- MPV:**](https://github.com/Zabooby/mpv-config) this amazing MPV config I stole | [**Boo SDDM:**](https://github.com/PROxZIMA/boo-sddm) for the sddm theme
+ MPV:**](https://github.com/Zabooby/mpv-config) this amazing MPV config I stole | [**Boo SDDM:**](https://github.com/PROxZIMA/boo-sddm) for the sddm theme | Layouts created by me with inspo from [r/unixporn](https://www.reddit.com/r/unixporn/) | All colors are various [base16](https://github.com/chriskempson/base16-schemes-source) themes
