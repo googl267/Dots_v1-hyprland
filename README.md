@@ -1,22 +1,43 @@
 # Hyprland Dots V1
 Im tired of not being able to use whatever colors I want for all my programs! Down with having tons of diffrent config files to edit! My dots use bash scripts for easy switching of colors and layouts separately
 > [!NOTE]  
-> This has been my very first time both using arch and scripting ANYTHING, so my scripts are very very very messy! However I found a cool tool called [flavours](https://github.com/misterio77/flavours) and will be replacing my color scripts with that. This will also include theming for neovim and kitty
+> This has been my very first time both using arch, git, and scripting.(I'm very proud of myself for learning nomatter how hard its been lol) My scripts are very very very messy! However I found a cool tool called [flavours](https://github.com/misterio77/flavours) and will be replacing my color scripts with that
 > 
 > I plan on replacing almost every componate with eww or ags in V2!
 
 ## Screenshots
-### outline
+### minimal
 
-### sharp
+### retro
 
 ### neon
 
-### minimal
+### sharp
 
 
-## Experiance
-I use this setup on both my laptop and my desktop and try to keep it as minimal as possible. However you can add your own program configs in .config/hypr/theme/layouts and change the script (will make it easier in the future I promise)
+## Useage
+you can create custom layous in .config/hypr/theme
+
+use flavours to apply system wide base16 theme
+<details open> 
+  <summary>My Base16 Config</summary>
+
+  - base00  background
+  - base01  background +
+  - base02  background ++
+  - base03  background +++
+  - base05  text
+  - base06  darker accent
+  - base07  borders and accents
+  - base08  red
+  - base09  orange
+  - base0A  yellow
+  - base0B  green
+  - base0C  aqua
+  - base0D  blue
+  - base0E  purple
+  - base0F  brown
+</details>
 
 ### Programs
 #### Themed Programs
@@ -32,66 +53,42 @@ I use this setup on both my laptop and my desktop and try to keep it as minimal 
 - [X] terminal
 - [ ] editor
 
+#### Default Dependancys
+
 <details open> 
-  <summary><h4>Applications</h4></summary>
-  
-  |- Use -|- Program -|
-  |:-|:-|
-  |**Booting** | playmouth and sddm |
-  |**Term** | kitty |
-  |**Fetch** | pfetch |
-  |**File Manager** | lf |
-  |**Text Editor** | neovim with nvchad |
-  |**Image Viewer** | qimgv |
-  |**Video Player** | mpv |
-  |**Music Player** | cue |
+  <summary><h4>Default Dependancys</h4></summary>
+
+  These are programs that are needed for everything to function out of the box
+  - hyprland
+  - hyprpaper
+  - hyprpicker
+  - kitty
+  - tofi
+  - wob
+  - mpv
+  - breezex-cursor-theme
+  - papirus
+  - grim and slurp
+  - waybar-hyprland and waybar-updates
+  - lunarvim
+  - swayidle
+  - swaylock-effects
+  - swaync
+  - bottom
+  - pipewire
+  - bluez and blueman
+  - pauvecontrol
+  - qt5-styleplugins
+  - playerctl
 </details>
 
 <details open> 
-  <summary><h4>Widgets</h4></summary>
-  
-  |- Use -|- Program -|
-  |:-|:-|
-  |**Bar** |waybar|
-  |**Menu** |tofi|
-  |**Notifs** |sway-nc|
-  |**Lock** |swaylock-effects|
-  |**OSD** |wob|
-  |**Wallpaper** |hyprpaper|
-  |**Icons** |papirus|
-  |**GTK** |sharp-gtk|
-  |**Cursors** |breezex|
-  |**Eyedropper**|hyprpicker|
-  |**Screenshot**|grim/slurp|
-</details>
-
-<details open> 
-  <summary><h4>Fonts</h4></summary>
+  <summary><h4>Default Fonts</h4></summary>
   
   * jetbrains nerd font
   * firacode nerd font
   * bigblueterm437 nerd font
   * hermit nerd font
-</details>
-
-<details> 
-  <summary><h4>System Stuff</h4></summary>
-  
-  * pipewire
-  * pavucontrol
-  * xdg-desktop-portal
-  * xdg-user-dirs
-  * qt5-wayland
-  * qt6-wayland
-  * bluez
-  * qt5-styleplugins 
-  * gtk-engine-murrine
-  * playerctl
-  * brightnessctl
-  * polkit-kde-agent
-  * blueman
-  * tlp
-  * swayidle
 </details>
 
 ## Easy layout and colors -land
