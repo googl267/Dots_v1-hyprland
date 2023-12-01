@@ -39,8 +39,7 @@ use flavours to apply system wide base16 theme
   - base0F  brown
 </details>
 
-### Programs
-#### Themed Programs
+## Programs
 - [X] hyprland
 - [X] bar
 - [X] menu
@@ -51,44 +50,45 @@ use flavours to apply system wide base16 theme
 - [X] gtk / qt
 - [X] browser
 - [X] terminal
-- [ ] editor
 
-#### Default Dependancys
-
+### Dependencies
+These are programs that are needed for everything to function out of the box, however I encorage you to modify my dots to your needs
 <details open> 
-  <summary><h4>Default Dependancys</h4></summary>
-
-  These are programs that are needed for everything to function out of the box
+  <summary><h4>Default Programs</h4></summary>
+  
   - hyprland
   - hyprpaper
   - hyprpicker
-  - kitty
-  - tofi
-  - wob
-  - mpv
-  - breezex-cursor-theme
-  - papirus
-  - grim and slurp
-  - waybar-hyprland and waybar-updates
-  - lunarvim
+  - hyprshot
   - swayidle
   - swaylock-effects
   - swaync
-  - bottom
   - pipewire
+  - kitty
+  - waybar-hyprland and waybar-updates
+  - tofi
+  - wob
+  - mpv
   - bluez and blueman
   - pauvecontrol
-  - qt5-styleplugins
-  - playerctl
+  - playerctl and brightnessctl
 </details>
 
 <details open> 
   <summary><h4>Default Fonts</h4></summary>
   
-  * jetbrains nerd font
-  * firacode nerd font
-  * bigblueterm437 nerd font
-  * hermit nerd font
+  - jetbrains nerd font
+  - firacode nerd font
+  - bigblueterm437 nerd font
+  - hermit nerd font
+</details>
+
+<details open> 
+  <summary><h4>Default GTK Stuff</h4></summary>
+  
+  - breezex-cursor-theme
+  - papirus-icons
+  - qt5-styleplugins (to theme qt programs with gtk2 theme)
 </details>
 
 ## Easy layout and colors -land
@@ -99,7 +99,6 @@ I tried to make it as simple as possible to define `layouts` and `colors`. Swapp
 
 ## Todo
 - [X] replace color change script with [flavours](https://github.com/misterio77/flavours)
-- [ ] rework layout script
 
 #### V2
 - [ ] give the repo a cool name
@@ -110,7 +109,7 @@ I tried to make it as simple as possible to define `layouts` and `colors`. Swapp
 #### V3
 - [ ] simple GUI for changing colors/layout script
 - [ ] cleanup scripts
-- [ ] install script
+- [ ] global install script
 
 # Credits
 **Sharp-GTK:** [(made by)](https://github.com/myagko) the gtk theme that saved me from needing to make my own | [**Simple Fox:**](https://github.com/migueravila/SimpleFox) slightly modified for my waterfox theme | [**Zabooby
