@@ -56,6 +56,7 @@ These are programs that are needed for everything to function out of the box, ho
 <details open> 
   <summary><h4>Default Programs</h4></summary>
   
+  - Flavours
   - hyprland
   - hyprpaper
   - hyprpicker
