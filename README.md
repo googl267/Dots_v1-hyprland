@@ -87,7 +87,7 @@ These are programs that are needed for everything to function out of the box, ho
   <summary><h4>Default GTK Stuff</h4></summary>
   
   - breezex-cursor-theme
-  - papirus-icons
+  - papirus-icons and papirus-folders
   - qt5-styleplugins (to theme qt programs with gtk2 theme)
 </details>
 
