@@ -1,0 +1,137 @@
+@import "colors.css";
+@define-color trans rgba(12, 12, 12, 0.3);
+
+    * {
+        /* intall `otf-font-awesome` and then add below if not using a nerd font */
+        font-family: JetBrainsMono Nerd Font;
+    }
+
+    window#waybar {
+        background-color: @layer0;
+        border-radius: 12px;
+        transition-property: background-color;
+        transition-duration: .5s;
+        
+    }
+
+    /*
+        Global Config 
+        add your moduals here to theme them
+    */
+    #clock,
+    #battery,
+    #pulseaudio,
+    #tray,
+    #idle_inhibitor,
+    #user,
+    #workspaces,
+    #custom-pacman{
+        font-size: 18px;
+        font-weight: 800;
+        padding: 5 4px;
+        margin: 12 8px;
+        border-radius: 5px;
+        background-color: @layer1;
+        color: @text;
+    }
+
+    /*
+        Icons
+        any moduals that only contain an icon add here
+        the #tray modual needs to be set in the config file
+    */
+    #battery,
+    #pulseaudio,
+    #idle_inhibitor,
+    #custom-pacman{
+        font-size: 24px;
+    }
+    
+
+    button {
+        /* Use box-shadow instead of border so the text isn't offset */
+        border: none;
+    }
+    
+    /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+    button:hover {
+        background: inherit;
+        border-radius: 0;
+    }
+
+
+    /*
+        Indivisual Configs
+        if anything appears weird or needs tweaking add '#ModualName' and tweak it
+    */
+
+    #battery.charging, #battery.plugged {
+        color: @green;
+    }
+    
+    #battery.critical:not(.charging) {
+        color: @red;
+    }
+
+
+    /* Workspaces needs weird margins because of horizontal text, adjust if changing font size/icons */
+    #workspaces {
+        font-size: 14;
+        margin: 0px;
+        margin-right: 5px;
+        background-color: transparent;
+    }
+
+    #workspaces button {
+        color: @text;
+        margin: 0px;
+        padding: 5 0px;
+    }
+
+    #workspaces button.persistent {
+        color: @text;
+        opacity: 1;
+    }
+
+    #workspaces button.empty {
+        color: @text;
+        opacity: 0.2;
+    }
+
+    #workspaces button.active {
+        color: @accent;
+        opacity: 1;
+    }
+    
+    #workspaces button:hover {
+        color: @yellow;
+        opacity: 1;
+    }
+    
+    #workspaces button.urgent {
+        color: @blue;
+        opacity: 1;
+    }
+    
+    #user{
+        color: @layer0;
+        background-color: @accent;
+    }
+
+    #custom-pacman.pending-updates {
+        color: @red;
+    }
+
+
+    #pulseaudio.muted {
+        color: @red;
+    }
+    
+    #idle_inhibitor{
+        padding-left: 3px;
+        padding-right: 7px;
+    }
+
+    #idle_inhibitor.activated {
+        color: @red;
+    }

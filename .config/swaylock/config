@@ -1,0 +1,105 @@
+## -- Initialize --
+ignore-empty-password
+ignore-empty-password
+screenshots
+effect-scale=0.5
+effect-blur=12x5
+fade-in=0.2
+#effect-greyscale
+effect-scale=2
+
+
+## -- Caps Lock --
+disable-caps-lock-text
+indicator-caps-lock
+caps-lock-bs-hl-color=b08ae6ff
+#Sets the color of backspace highlight segments when Caps Lock is active.
+caps-lock-key-hl-color=a366ffff
+#Sets the color of the key press highlight segments when Caps Lock is active.
+inside-caps-lock-color=000000ff
+#Sets the color of the inside of the indicator when Caps Lock is active.
+line-caps-lock-color=4595e6ff
+#Sets the color of the line between the inside and ring when Caps Lock is active.
+ring-caps-lock-color=4595e6ff
+#Sets the color of the ring of the indicator when Caps Lock is active.
+text-caps-lock-color=b08ae6ff
+#Sets the color of the text when Caps Lock is active.
+
+
+## -- Invalid --
+inside-wrong-color=a82ee6ff
+#Sets the color of the inside of the indicator when invalid.
+line-wrong-color=b08ae6ff
+#Sets the color of the line between the inside and ring when invalid.
+ring-wrong-color=a82ee6ff
+#Sets the color of the ring of the indicator when invalid.
+text-wrong-color=a82ee6ff
+#Sets the color of the text when invalid.
+
+
+## -- Verify --
+inside-ver-color=4136d9ff
+#Sets the color of the inside of the indicator when verifying.
+line-ver-color=b08ae6ff
+#Sets the color of the line between the inside and ring when verifying.
+ring-ver-color=4136d9ff
+#Sets the color of the ring of the indicator when verifying.
+text-ver-color=4136d9ff
+#Sets the color of the text when verifying.
+
+
+## -- Clear --
+inside-clear-color=000000ff
+#Sets the color of the inside of the indicator when cleared.
+line-clear-color=b08ae6ff
+#Sets the color of the line between the inside and ring when cleared.
+ring-clear-color=b08ae6ff
+#Sets the color of the ring of the indicator when cleared.
+text-clear-color=b08ae6ff
+#Sets the color of the text when cleared.
+
+
+## -- Indicator --
+indicator-idle-visible
+indicator-radius=150
+#Sets the indicator radius. The default value is 50.
+indicator-thickness=18
+#Sets the indicator thickness. The default value is 10.
+
+
+## -- Inside --
+inside-color=231a40ff
+#Sets the color of the inside of the indicator.
+
+
+## -- Highlights --
+key-hl-color=a366ffff
+#Sets the color of the key press highlight segments.
+bs-hl-color=b08ae6ff
+#Sets the color of backspace highlight segments.
+separator-color=a366ffff
+#Sets the color of the lines that separate highlight segments.
+
+
+## -- Inner Line --
+#line-uses-inside
+#Use the inside color for the line between the inside and ring.
+line-uses-ring
+#Use the ring color for the line between the inside and ring.
+#line-color=$PRIMARY
+#Sets the color of the line between the inside and ring.
+
+
+## -- Ring --
+ring-color=231a40ff
+#Sets the color of the ring of the indicator when typing or idle.
+
+
+## -- Text --
+font=JetBrainsMono Nerd Font
+font-size=34
+clock
+timestr=%T
+datestr=%a
+text-color=b08ae6ff
+#Sets the color of the text.

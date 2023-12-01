@@ -1,0 +1,370 @@
+@import "colors.css";
+
+* {
+    font-family: JetBrainsMono Nerd Font;
+
+    box-shadow: none;
+    text-shadow: none;
+    outline: none;
+}
+
+
+/* --- */
+/* --- Title --- */
+/* --- */
+.widget-title {
+    margin: 0.8rem 1rem;
+    padding: 0.2 1rem;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: @text;
+    border: 2px solid @accent;
+    background-color: @layer1;
+    border-radius: 3px;
+}
+
+.widget-title > button {
+    color: @text;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+}
+
+.widget-title > button:hover {
+    background: @red;
+}
+
+
+
+/* --- */
+/* --- Do Not Disurb --- */
+/* --- */
+.widget-dnd {
+    margin: 2 8rem;
+    padding: 0.2 1rem;
+    font-size: 1.2rem;
+    color: @text;
+}
+
+.widget-dnd > switch {
+    border-radius: 0;
+    background: @layer2;
+    border: none;
+}
+
+.widget-dnd > switch:checked {
+    background: @red;
+}
+
+.widget-dnd > switch slider {
+    border: 2px solid @accent;
+    background: @layer0;
+    border-radius: 0;
+    
+}
+
+
+
+/* --- */
+/* --- Notifications --- */
+/* --- */
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+  border-radius: 3px;
+  background: transparent;
+}
+
+.control-center .notification-default-action,
+.control-center .notification-action {
+  background: @layer2;
+  border: none;
+}
+
+.control-center .notification-default-action:hover,
+.control-center .notification-action:hover {
+  background: @layer1;
+}
+
+.notification-row {
+}
+
+.notification {
+    border-radius: 3px;
+    margin: 0rem 1.4rem;
+    padding: 0;
+}
+
+.notification-content {
+    border: transparent;
+    padding: 1.4rem;
+    padding-top: 0.8rem;
+    border-radius: 3px;
+}
+
+.notification-default-action,
+.notification-action {
+    padding: 4px;
+    margin: 0;
+    background: @layer2;
+    border: none;
+    color: @text;
+    transition: all 0.15s ease-in-out;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+    -gtk-icon-effect: none;
+    background: @layer1;
+}
+
+.notification-default-action {
+    border-radius: 3px;
+}
+
+/* When alternative actions are visible */
+.notification-default-action:not(:only-child) {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.notification-action {
+    border-radius: 3px;
+    border-top: none;
+    border-right: none;
+}
+
+/* add bottom border radius to eliminate clipping */
+.notification-action:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+.notification-action:last-child {
+    border-bottom-right-radius: 3px;
+    border-right: 1px solid @layer2;
+}
+
+.inline-reply {
+    margin-top: 8px;
+}
+.inline-reply-entry {
+    background: @layer1;
+    color: @text;
+    caret-color: @text;
+    border: 1px solid @accent;
+    border-radius: 3px;
+}
+.inline-reply-button {
+    margin-left: 4px;
+    background: @layer1;
+    border: 1px solid @accent;
+    border-radius: 3px;
+    color: @text;
+}
+.inline-reply-button:disabled {
+    background: initial;
+    color: @layer2;
+    border: 1px solid transparent;
+}
+.inline-reply-button:hover {
+    background: @layer0;
+}
+
+.image {
+}
+
+.body-image {
+    margin-top: 6px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.summary {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    background: transparent;
+    color: @text;
+}
+
+.time {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    background: transparent;
+    color: @accent;
+    margin-right: 1rem;
+}
+
+.body {
+    font-size: 1.1rem;
+    font-weight: normal;
+    background: transparent;
+    color: @text-color;
+}
+
+.floating-notifications {
+    background: transparent;
+    border-radius: 3px;
+}
+
+
+
+/* --- */
+/* --- Quick Menu Buttons --- */
+/* --- */
+.widget-buttons-grid {
+    font-size: 1.8rem;
+    padding: 0.2rem;
+    margin: 0.2rem 1rem;
+    border-radius: 3px;
+    background: @layer1;
+    border: none;
+
+    margin-top: 1rem;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button {
+    margin: 3px;
+    background: transparent;
+    border-radius: 3px;
+    color: @text;
+    border: none;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+    background: @accent;
+    color: @layer0;
+}
+
+.widget-menubar>box>.menu-button-bar>button {
+    border: none;
+    background: transparent
+}
+
+.topbar-buttons>button {
+    border: none;
+    background: transparent
+}
+
+
+
+/* --- */
+/* --- MPRIS --- */
+/* --- */
+.widget-mpris {
+    margin: 0.2rem 1rem;
+    background: @layer1;
+    color: @text;
+    border-radius: 3px;
+    border: none;
+}
+.widget-mpris-player {
+    padding: 1rem 1rem 0 1rem;
+    margin: 0;
+}
+.widget-mpris-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.widget-mpris-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1.4rem;
+}
+
+.widget-mpris-album-art {
+    border-radius: 3px;
+}
+
+.topbar-buttons > button {
+    border: none;
+    background: transparent;
+}
+
+
+
+/* --- */
+/* --- Volume + Backlight Sliders --- */
+/* --- */
+.widget-volume {
+    background-color: @layer1;
+    color: @accent;
+    margin: 0.2rem 1rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    border: none;
+    font-size: 1.8rem;
+}
+
+.widget-volume > box > button {
+    background: transparent;
+    border: none;
+}
+
+.per-app-volume {
+    background-color: @layer0;
+    padding: 4px 8px 8px 8px;
+    margin: 0px 8px 8px 8px;
+    border-radius: 3px;
+}
+
+.widget-backlight {
+    background-color: @layer1;
+    color: @accent;
+    margin: 0.2rem 1rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    border: none;
+    font-size: 1.8rem;
+
+    margin-bottom: 0.8rem;
+}
+
+.widget-backlight > box > button {
+    background: transparent;
+    border: none;
+}
+
+
+
+/* --- */
+/* --- Elements --- */
+/* --- */
+
+/* close button */
+.close-button {
+    background: @layer0;
+    color: @text;
+    padding: 0;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+    border: none;
+    min-width: 24px;
+    min-height: 24px;
+  }
+  
+  .close-button:hover {
+    background: @red;
+    transition: all 0.15s ease-in-out;
+    border: none;
+  }
+
+  /* panel */
+  .control-center {
+    background: @layer0;
+    border: 2px @accent solid;
+    border-radius: 5px;
+
+  }
+
+  .control-center-list {
+    background: transparent;
+  }
+  
+  .control-center-list-placeholder {
+    color: @accent;
+    opacity: 1;
+    font-weight: bolder;
+  }
+
+  .blank-window {
+    background: transparent;
+  }

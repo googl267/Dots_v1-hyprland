@@ -1,0 +1,72 @@
+# waybar
+[[items]]
+file = "~/.config/waybar/colors.css"
+template = "gtk"
+subtemplate = "css"
+rewrite = true
+hook = "killall -SIGUSR2 waybar"
+
+# swaync
+[[items]]
+file = "~/.config/swaync/colors.css"
+template = "gtk"
+subtemplate = "css"
+rewrite = true
+hook = "swaync-client -rs"
+
+# tofi
+[[items]]
+file = "~/.config/tofi/config"
+template = "tofi"
+rewrite = false
+
+# gtk
+[[item]]
+file = "~/.themes/solid_gtk/gtk-3.0/colors.css"
+template = "gtk"
+subtemplate = "gtk-3"
+rewrite = true
+hook = "gsettings set org.gnome.desktop.interface gtk-theme dummy && gsettings set org.gnome.desktop.interface gtk-theme solid_gtk"
+
+[[item]]
+file = "~/.themes/solid_gtk/gtk-2.0/gtkrc"
+template = "gtk"
+subtemplate = "gtk-2"
+rewrite = true
+
+# vim
+
+# kitty
+[[items]]
+file = "~/.config/kitty/current-theme.conf"
+template = "kitty"
+rewrite = true
+hook = "kitty kill -SIGUSR1 $(pidof kitty)"
+
+# waterfox
+#[[items]]
+#file = "~/.waterfox/ywnasjr6.default-release/chrome/userChrome.css"
+#template = "waterfox"
+#rewrite = false
+#start= "/* Start flavours */"
+#end = "/* End flavours */"
+
+# wob
+[[items]]
+file = "~/.config/wob/wob.ini"
+template = "wob"
+rewrite = false
+
+# swaylock
+[[items]]
+file = "~/.config/swaylock/config"
+template = "swaylock"
+rewrite = true
+
+# hyprland
+[[items]]
+file = "~/.config/hypr/theme/color.conf"
+template = "hyprland"
+rewrite = true
+light = false
+#hook = "hyprctl dispatch exit"

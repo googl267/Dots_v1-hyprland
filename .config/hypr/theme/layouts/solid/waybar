@@ -1,0 +1,85 @@
+{
+        "layer": "top",
+        "position": "left",
+        "margin": 8,
+        "modules-left": ["battery", "hyprland/workspaces"],
+        "modules-center": ["user"],
+        "modules-right": ["tray", "custom/pacman", "pulseaudio", "clock", "idle_inhibitor"],
+        
+        "battery": {
+                "format": "{icon}",
+                "format-charging": "󱈑",
+                "format-plugged": "󱈑",
+                "format-icons": ["󰂃", "󰂃", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+                "tooltip-format": "{capacity}%"
+
+        },
+
+        "hyprland/workspaces": {
+                "persistent-workspaces": {
+                        "*": 10,
+                },
+                "format": "{icon}",
+                "format-icons": {
+                        "active": "", 
+                        "empty": "",
+                        "persistent": "",
+                        "default": ""
+                }
+        },
+
+        "user": {
+                "rotate": 90,
+                "format": "°´✿•[{user}]•✿`°",
+                "icon": false,
+        },
+
+        "tray": {
+                "icon-size": 14,
+                "spacing": 15
+        },
+
+        "custom/pacman": {
+                "format": "{icon}",
+                "return-type": "json",
+                "format-icons": {
+                        "pending-updates": "󱠛",
+                        "updated": "󱤱"
+                },
+                "exec-if": "which waybar-updates",
+                "exec": "waybar-updates"
+        },
+
+        "pulseaudio": {
+                // "scroll-step": 1, // %, can be a float
+                "format": "{icon}",
+                "format-bluetooth": "{icon}",
+                "format-bluetooth-muted": "{icon}",
+                "format-muted": "󰖁",
+                "format-icons": {
+                        "headphone": "󰋋",
+                        "hands-free": "",
+                        "headset": "",
+                        "phone": "",
+                        "portable": "",
+                        "car": "",
+                        "default": ["󰕿", "󰖀", "󰕾"]
+                },
+                "on-click": "pavucontrol"
+        },
+
+        "clock": {
+                "rotate": 90,
+                "format-alt": "{:%a, %d. %b  %H:%M}"
+        },
+
+        "idle_inhibitor": {
+                "format": "{icon}",
+                "format-icons": {
+                        "activated": "󰒳",
+                        "deactivated": "󰒲"
+                }
+        }
+        
+
+    }

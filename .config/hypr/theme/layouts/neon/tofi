@@ -1,0 +1,25 @@
+hide-cursor = true
+
+background-color = #000D
+corner-radius=0
+padding-left = 5%
+padding-top = 18%
+anchor=center
+outline-width=0
+border-width=0
+width = 100%
+height = 100%
+result-spacing = 25
+num-results = 15
+
+font = JetBrainsMono Nerd Font
+font-size = 12
+text-color= $TEXT
+text-cursor=true
+
+prompt-text = "  run "
+prompt-padding=5
+prompt-color= $TEXT
+input-color= $ACCENT
+
+selection-color = $ACCENT

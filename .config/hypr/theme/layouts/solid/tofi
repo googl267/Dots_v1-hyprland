@@ -1,0 +1,32 @@
+
+hide-cursor = true
+
+background-color = $LAYER0
+corner-radius=12
+anchor=left
+margin-left=65
+outline-width=0
+border-width=0
+width = 400
+height = 98%
+result-spacing = 25
+num-results = 21
+
+font = JetBrainsMono Nerd Font
+font-size = 12
+text-color= $TET
+text-cursor=true
+
+prompt-text = "  run "
+prompt-padding=5
+prompt-color= $TEXT
+input-color= $ACCENT
+
+selection-color = $LAYER0
+selection-background= $ACCENT
+selection-background-corner-radius=8
+selection-background-padding=5, -1
+
+
+
+

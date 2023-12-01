@@ -1,0 +1,104 @@
+## -- Initialize --
+ignore-empty-password
+screenshots
+effect-scale=0.5
+effect-blur=8x5
+fade-in=0.2
+#effect-greyscale
+effect-scale=2
+
+
+## -- Caps Lock --
+disable-caps-lock-text
+indicator-caps-lock
+caps-lock-bs-hl-color=$TEXT
+#Sets the color of backspace highlight segments when Caps Lock is active.
+caps-lock-key-hl-color=$ACCENT
+#Sets the color of the key press highlight segments when Caps Lock is active.
+inside-caps-lock-color=$LAYER0
+#Sets the color of the inside of the indicator when Caps Lock is active.
+line-caps-lock-color=$GREEN
+#Sets the color of the line between the inside and ring when Caps Lock is active.
+ring-caps-lock-color=$GREEN
+#Sets the color of the ring of the indicator when Caps Lock is active.
+text-caps-lock-color=$TEXT
+#Sets the color of the text when Caps Lock is active.
+
+
+## -- Invalid --
+inside-wrong-color=$RED
+#Sets the color of the inside of the indicator when invalid.
+line-wrong-color=$TEXT
+#Sets the color of the line between the inside and ring when invalid.
+ring-wrong-color=$RED
+#Sets the color of the ring of the indicator when invalid.
+text-wrong-color=$RED
+#Sets the color of the text when invalid.
+
+
+## -- Verify --
+inside-ver-color=$BLUE
+#Sets the color of the inside of the indicator when verifying.
+line-ver-color=$TEXT
+#Sets the color of the line between the inside and ring when verifying.
+ring-ver-color=$BLUE
+#Sets the color of the ring of the indicator when verifying.
+text-ver-color=$BLUE
+#Sets the color of the text when verifying.
+
+
+## -- Clear --
+inside-clear-color=$LAYER0
+#Sets the color of the inside of the indicator when cleared.
+line-clear-color=$TEXT
+#Sets the color of the line between the inside and ring when cleared.
+ring-clear-color=$TEXT
+#Sets the color of the ring of the indicator when cleared.
+text-clear-color=$TEXT
+#Sets the color of the text when cleared.
+
+
+## -- Indicator --
+indicator-idle-visible
+indicator-radius=150
+#Sets the indicator radius. The default value is 50.
+indicator-thickness=15
+#Sets the indicator thickness. The default value is 10.
+
+
+## -- Inside --
+inside-color=$LAYER1
+#Sets the color of the inside of the indicator.
+
+
+## -- Highlights --
+key-hl-color=$ACCENT
+#Sets the color of the key press highlight segments.
+bs-hl-color=$TEXT
+#Sets the color of backspace highlight segments.
+separator-color=$ACCENT
+#Sets the color of the lines that separate highlight segments.
+
+
+## -- Inner Line --
+#line-uses-inside
+#Use the inside color for the line between the inside and ring.
+line-uses-ring
+#Use the ring color for the line between the inside and ring.
+#line-color=$PRIMARY
+#Sets the color of the line between the inside and ring.
+
+
+## -- Ring --
+ring-color=$LAYER0
+#Sets the color of the ring of the indicator when typing or idle.
+
+
+## -- Text --
+font=JetBrainsMono Nerd Font
+font-size=34
+clock
+timestr=%T
+datestr=%a
+text-color=$TEXT
+#Sets the color of the text.
