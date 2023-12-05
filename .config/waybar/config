@@ -16,16 +16,18 @@
         },
 
         "hyprland/workspaces": {
-                "persistent-workspaces": {
-                        "*": 10,
-                },
+		"all-outputs": true,
                 "format": "{icon}",
                 "format-icons": {
                         "active": "", 
                         "empty": "",
                         "persistent": "",
                         "default": ""
+                },
+		"persistent-workspaces": {
+                        "*": 10,
                 }
+
         },
 
         "user": {

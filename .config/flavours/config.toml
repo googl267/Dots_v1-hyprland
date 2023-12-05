@@ -65,8 +65,6 @@ rewrite = true
 
 # hyprland
 [[items]]
-file = "~/.config/hypr/theme/color.conf"
+file = "~/.config/hypr/theme/theme.conf"
 template = "hyprland"
-rewrite = true
-light = false
-#hook = "hyprctl dispatch exit"
+rewrite = false
