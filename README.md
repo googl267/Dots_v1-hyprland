@@ -6,13 +6,13 @@ Im tired of not being able to use whatever colors I want for all my programs! Do
 > I plan on replacing almost every componate with eww or ags in V2!
 
 ## Screenshots
-### minimal
+### Dev
 
-### retro
+### Clean
 
-### neon
+### Nightcore
 
-### sharp
+### Retro
 
 
 ## Useage
