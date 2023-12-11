@@ -1,9 +1,11 @@
 # Hyprland Dots V1
 Im tired of not being able to use whatever colors I want for all my programs! Down with having tons of diffrent config files to edit! My dots use bash scripts for easy switching of colors and layouts separately
 > [!NOTE]  
-> This has been my very first time both using arch and scripting ANYTHING, so my scripts are very very very messy! However I found a cool tool called [flavours](https://github.com/misterio77/flavours) and will be replacing my color scripts with that. This will also include theming for neovim and kitty
+> This has been my very first time both using arch and scripting ANYTHING, so my scripts are very very very messy! ~~However I found a cool tool called [flavours](https://github.com/misterio77/flavours) and will be replacing my color scripts with that. This will also include theming for neovim and kitty~~
+>
+> Now powered by flavours!
 > 
-> I plan on replacing almost every componate with eww or ags in V2!
+> When I have time ill replace everything with eww or ags for that eye candy goodness
 
 ## Screenshots
 ### outline
@@ -102,17 +104,16 @@ I tried to make it as simple as possible to define `layouts` and `colors`. Swapp
 
 ## Todo
 - [X] replace color change script with [flavours](https://github.com/misterio77/flavours)
-- [ ] rework layout script
+- [X] rework layout script
 
 #### V2
 - [ ] give the repo a cool name
 - [ ] ! replace everything with eww or ags
-- [ ] make fire/waterfox theme + startpage
+- [ ] custom fire/waterfox theme + startpage
 - [ ] remake Sharp-GTK theme to use base16
 
 #### V3
-- [ ] simple GUI for changing colors/layout script
-- [ ] cleanup scripts
+- [ ] simple GUI for changing colors/layout script with eww/ags
 - [ ] install script
 
 # Credits
