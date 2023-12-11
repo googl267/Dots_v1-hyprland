@@ -2,13 +2,13 @@
 [[items]]
 file = "~/.config/waybar/style.css"
 template = "waybar"
-subtemplate = "css_clean"
+subtemplate = "css_pixel"
 rewrite = true
 
 [[items]]
 file = "~/.config/waybar/config"
 template = "waybar"
-subtemplate = "config_clean"
+subtemplate = "config_pixel"
 rewrite = true
 hook = "killall waybar; waybar & disown"
 
@@ -24,7 +24,7 @@ hook = "swaync-client -rs"
 [[items]]
 file = "~/.config/tofi/config"
 template = "tofi"
-subtemplate = "clean"
+subtemplate = "pixel"
 rewrite = true
 
 # gtk
@@ -39,7 +39,7 @@ file = "~/.themes/solid_gtk/gtk-2.0/gtkrc"
 template = "gtk"
 subtemplate = "gtk-2"
 rewrite = true
-hook = "gsettings set org.gnome.desktop.interface gtk-theme dummy && gsettings set org.gnome.desktop.interface gtk-theme solid_gtk && gsettings set org.gnome.desktop.interface font-name \"JetBrainsMono Nerd Font\""
+hook = "gsettings set org.gnome.desktop.interface gtk-theme dummy && gsettings set org.gnome.desktop.interface gtk-theme sharp_gtk && gsettings set org.gnome.desktop.interface font-name \"BigBlueTermPlus Nerd Font\""
 
 # vim
 
@@ -47,7 +47,7 @@ hook = "gsettings set org.gnome.desktop.interface gtk-theme dummy && gsettings s
 [[items]]
 file = "~/.config/kitty/kitty.conf"
 template = "kitty"
-subtemplate = "clean"
+subtemplate = "pixel"
 rewrite = true
 hook = "kitty kill -SIGUSR1 $(pidof kitty)"
 
@@ -63,19 +63,19 @@ end = "/* End flavours */"
 [[items]]
 file = "~/.config/swaylock/config"
 template = "swaylock"
-subtemplate = "clean"
+subtemplate = "pixel"
 rewrite = true
 
 # hyprland
 [[items]]
 file = "~/.config/hypr/theme/theme.conf"
 template = "hyprland"
-subtemplate = "clean"
+subtemplate = "pixel"
 rewrite = true
 
 # starship
 [[items]]
 file = "~/.config/starship.toml"
 template = "starship"
-subtemplate = "clean"
+subtemplate = "pixel"
 rewrite = true

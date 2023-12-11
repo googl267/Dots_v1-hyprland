@@ -9,11 +9,11 @@ base04: "5F9C92"
 base05: "81B5AC"
 base06: "A7CEC8"
 base07: "D2E7E4"
-base08: "3E9688"
-base09: "3E7996"
-base0A: "3E4C96"
-base0B: "883E96"
-base0C: "963E4C"
-base0D: "96883E"
-base0E: "4C963E"
-base0F: "3E965B"
+base08: "963E4C" #red
+base09: "96883E" #yellow
+base0A: "4C963E" #green
+base0B: "3E965B" #green
+base0C: "3E7996" #cyan
+base0D: "3E4C96" #blue
+base0E: "883E96" #purple
+base0F: "3E9688" #green
