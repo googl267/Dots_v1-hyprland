@@ -1,14 +1,14 @@
 # Hyprland Dots V1
 Im tired of not being able to use whatever colors I want for all my programs! Down with having tons of diffrent config files to edit! My dots use bash scripts for easy switching of colors and layouts separately
 > [!NOTE]  
-> This has been my very first time both using arch, git, and scripting.(I'm very proud of myself for learning nomatter how hard its been lol) My scripts are very very very messy! However I found a cool tool called [flavours](https://github.com/misterio77/flavours) and will be replacing my color scripts with that
+> This has been my very first time both using arch, git, and scripting(I'm very proud of myself despite how basic most my useage has been). My scripts are very very very messy! However I found a cool tool called [flavours](https://github.com/misterio77/flavours) and will be replacing my color scripts with that
 > 
 > I plan on replacing almost every componate with eww or ags in V2!
 
 ## Screenshots
-### Dev
-
 ### Clean
+
+### Dev
 
 ### Nightcore
 
@@ -16,11 +16,10 @@ Im tired of not being able to use whatever colors I want for all my programs! Do
 
 
 ## Useage
-you can create custom layous in .config/hypr/theme
+you can create custom layous in flavours. I'll write a walkthrough when I get the chance
 
-use flavours to apply system wide base16 theme
 <details open> 
-  <summary>My Base16 Config</summary>
+  <summary>How I have Base16 files setup</summary>
 
   - base00  background
   - base01  background +
@@ -45,13 +44,12 @@ use flavours to apply system wide base16 theme
 - [X] menu
 - [X] notifications
 - [X] lockscreen
-- [X] osd
 - [X] wallpaper
 - [X] gtk / qt
 - [X] browser
 - [X] terminal
 
-### Dependencies
+### Programs
 These are programs that are needed for everything to function out of the box, however I encorage you to modify my dots to your needs
 <details open> 
   <summary><h4>Default Programs</h4></summary>
@@ -68,7 +66,6 @@ These are programs that are needed for everything to function out of the box, ho
   - kitty
   - waybar-hyprland-cava, waybar-updates, and waybar-mpris
   - tofi
-  - wob
   - mpv
   - bluez and blueman
   - pauvecontrol
@@ -81,7 +78,8 @@ These are programs that are needed for everything to function out of the box, ho
   - jetbrains nerd font
   - firacode nerd font
   - bigblueterm437 nerd font
-  - hermit nerd font
+  - hurmit nerd font
+  - victormono nerd font
 </details>
 
 <details open> 
@@ -96,7 +94,7 @@ These are programs that are needed for everything to function out of the box, ho
 > [!NOTE]  
 > Now using [flavours](https://github.com/misterio77/flavours)!
 > 
-I tried to make it as simple as possible to define `layouts` and `colors`. Swapping color scemes or layout is as easy as running the `swapper.sh` script
+Adding layout and schemes tutorial will go here when I get the chance lol
 
 ## Todo
 - [X] replace color change script with [flavours](https://github.com/misterio77/flavours)
