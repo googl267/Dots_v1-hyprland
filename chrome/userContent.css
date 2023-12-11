@@ -1,11 +1,15 @@
 @-moz-document url("about:home"), url("about:newtab") {
 	:root {
-		--sfwindow: #181825;
-		--sfsecondary: #1e1e2e;
+		/* Start flavours */
+
+        --sfwindow: #1e1e2e;
+	--sfsecondary: #181825;
+		/* End flavours */
 	}
 
         body {
-          background-image: url("background.jpg") !important;
+          /*background-image: url("background.jpg") !important;*/
+	  background: var(--sfsecondary) !important;
           background-repeat: no-repeat !important;
           background-position: center !important;
           background-size: cover !important;

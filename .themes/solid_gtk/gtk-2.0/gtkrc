@@ -1,7 +1,7 @@
-gtk-color-scheme = "foreground:#b08ae6"
-gtk-color-scheme = "background:#000000"
-gtk-color-scheme = "background_alt:#231a40"
-gtk-color-scheme = "accent:#a366ff"
+gtk-color-scheme = "foreground:#cdd6f4"
+gtk-color-scheme = "background:#181825"
+gtk-color-scheme = "background_alt:#1e1e2e"
+gtk-color-scheme = "accent:#cba6f7"
 
 include "widgets/default"
 include "widgets/buttons"
