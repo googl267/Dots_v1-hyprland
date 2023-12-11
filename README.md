@@ -12,7 +12,7 @@ Im tired of not being able to use whatever colors I want for all my programs! Do
 
 ### Nightcore
 
-### Retro
+### Pixel
 
 
 ## Useage
@@ -66,7 +66,7 @@ These are programs that are needed for everything to function out of the box, ho
   - swaync
   - pipewire
   - kitty
-  - waybar-hyprland and waybar-updates
+  - waybar-hyprland-cava, waybar-updates, and waybar-mpris
   - tofi
   - wob
   - mpv

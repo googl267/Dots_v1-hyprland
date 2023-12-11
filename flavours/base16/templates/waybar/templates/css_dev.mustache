@@ -1,19 +1,19 @@
-@define-color bg0       #181825;
-@define-color bg1       #1e1e2e;
-@define-color bg2       #313244;
-@define-color bg3       #45475a;
-@define-color bg4       #585b70;
-@define-color text      #cdd6f4;
-@define-color accentD   #b4befe;
-@define-color accent    #cba6f7;
-@define-color red       #f38ba8;
-@define-color orange    #fab387;
-@define-color yellow    #f9e2af;
-@define-color green     #a6e3a1;
-@define-color aqua      #94e2d5;
-@define-color blue      #89b4fa;
-@define-color purple    #9399b2;
-@define-color brown     #f2cdcd;
+@define-color bg0       #{{base00-hex}};
+@define-color bg1       #{{base01-hex}};
+@define-color bg2       #{{base02-hex}};
+@define-color bg3       #{{base03-hex}};
+@define-color bg4       #{{base04-hex}};
+@define-color text      #{{base05-hex}};
+@define-color accentD   #{{base06-hex}};
+@define-color accent    #{{base07-hex}};
+@define-color red       #{{base08-hex}};
+@define-color orange    #{{base09-hex}};
+@define-color yellow    #{{base0A-hex}};
+@define-color green     #{{base0B-hex}};
+@define-color aqua      #{{base0C-hex}};
+@define-color blue      #{{base0D-hex}};
+@define-color purple    #{{base0E-hex}};
+@define-color brown     #{{base0F-hex}};
 
     * {
         /* intall `otf-font-awesome` and then add below if not using a nerd font */
@@ -22,7 +22,6 @@
 
     window#waybar {
         background-color: @bg0;
-        border-radius: 8px;
         transition-property: background-color;
         transition-duration: .5s;
         
@@ -39,28 +38,18 @@
     #idle_inhibitor,
     #user,
     #workspaces,
-    #custom-pacman{
-        font-size: 12px;
-        font-weight: 800;
-        padding: 5 8px;
-        margin: 8 4px;
-        border-radius: 5px;
-        background-color: @bg1;
+    #custom-pacman,
+    #backlight,
+    #cpu,
+    #memory,
+    #disk,
+    #temperature{
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0 4px;
+        margin: 0 12px;
+        background-color: transparent;
         color: @text;
-    }
-
-    /*
-        Icons
-        any moduals that only contain an icon add here
-        the #tray modual needs to be set in the config file
-    */
-    #battery,
-    #pulseaudio,
-    #idle_inhibitor,
-    #custom-pacman{
-        font-size: 22px;
-        font-weight: 900;
-        padding: 5 0px;
     }
     
 
@@ -89,57 +78,70 @@
         color: @red;
     }
 
+    #backlight.low {
+        color: @blue;
+    }
+
+    #backlight.high {
+        color: @yellow;
+    }
+
+    #clock {
+        font-weight: 900;
+    }
+
+    #user {
+        font-weight: 900;
+    }
+
 
     /* Workspaces needs weird margins because of horizontal text, adjust if changing font size/icons */
     #workspaces {
-        font-size: 12;
-        margin: 0px;
-        margin-right: 5px;
         background-color: transparent;
+        font-weight: 900;
     }
 
     #workspaces button {
-        color: @text;
-        margin: 0px;
-        padding: 5 0px;
+        color: @bg3;
+        margin: 0 5px;
     }
 
     #workspaces button.persistent {
         color: @text;
-        opacity: 1;
     }
 
     #workspaces button.empty {
-        color: @text;
-        opacity: 0.2;
+        color: @bg3;
     }
 
     #workspaces button.active {
         color: @accent;
-        opacity: 1;
     }
     
     #workspaces button:hover {
         color: @yellow;
-        opacity: 1;
     }
     
     #workspaces button.urgent {
         color: @blue;
-        opacity: 1;
     }
-    
-    #user {
-        font-size: 14px;
-        color: @bg0;
-        background-color: @accent;
-        padding: 5 8px;
-        font-weight: 900;
+
+    #cpu {
+        color: @blue;
+    }
+
+    #memory {
+        color: @yellow;
+    }
+
+    #temperature {
+        color: @red;
     }
 
     #custom-pacman.pending-updates {
         color: @red;
     }
+
 
     #pulseaudio.muted {
         color: @red;
@@ -148,29 +150,9 @@
     #idle_inhibitor{
         padding-left: 3px;
         padding-right: 7px;
-        margin-bottom: 4px;
     }
 
     #idle_inhibitor.activated {
         color: @red;
     }
-
-    #clock {
-        font-size: 22px;
-        font-weight: 900;
-        padding: 5 1px;
-        background-color: @bg1;
-        color: @text;
-    }
-
-    #tray {
-        font-size: 0px;
-        font-weight: 800;
-        padding: 5 0px;
-        background-color: @bg1;
-        color: @text;
-    }
-
-    #battery {
-        margin-top: 4px;
-    }
+    

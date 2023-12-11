@@ -1,22 +1,5 @@
 hide-cursor = true
 
-# coloring using flavours ! dont touch !
-# Start flavours
-
-# Base16 Dark Violet
-# ruler501 (https://github.com/ruler501/base16-darkviolet)
-
-background-color = #000000
-outline-color= #a366ff
-border-color= #a366ff
-text-color= #b08ae6
-prompt-color= #b08ae6
-placeholder-color= #231a40
-input-color= #a366ff
-selection-color= #000000
-selection-background= #a366ff
-# End flavours
-
 corner-radius=5
 anchor=center
 outline-width=0
@@ -33,11 +16,18 @@ text-cursor=true
 prompt-text = "  run "
 prompt-padding=5
 
-
-
 selection-background-corner-radius=3
 selection-background-padding=5, -1
 
+# Base16 Catppuccin Mocha
+# https://github.com/catppuccin/catppuccin
 
-
-
+background-color = #181825
+outline-color= #cba6f7
+border-color= #cba6f7
+text-color= #cdd6f4
+prompt-color= #cdd6f4
+placeholder-color= #1e1e2e
+input-color= #cba6f7
+selection-color= #181825
+selection-background= #cba6f7

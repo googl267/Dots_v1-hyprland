@@ -7,7 +7,7 @@ CHROME_DIR=$({
         find ~/.waterfox -type d -name "*.default-release"
 })
 
-cp -r .config/* ~/.config
-cp -r .themes/* ~/.themes
-cp -r flavours/* ~/.local/share/flavours/
-cp -r chrome/* $CHROME_DIR/chrome/
+cp -a .config/* ~/.config
+cp -a .themes/* ~/.themes
+cp -a flavours/* ~/.local/share/flavours
+cp -a chrome/* $CHROME_DIR/chrome/
