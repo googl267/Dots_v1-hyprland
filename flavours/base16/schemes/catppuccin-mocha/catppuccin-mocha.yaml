@@ -1,4 +1,4 @@
-scheme: "Catppuccin-Mocha"
+scheme: "catppuccin-mocha"
 author: "https://github.com/catppuccin/catppuccin"
 base00: "181825" # mantle
 base01: "1e1e2e" # base
