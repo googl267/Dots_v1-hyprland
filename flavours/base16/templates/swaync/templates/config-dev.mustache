@@ -1,72 +1,71 @@
 {
   "$schema": "/etc/xdg/swaync/configSchema.json",
-  "positionX": "left",
-  "positionY": "center",
-  "control-center-margin-top": 8,
-  "control-center-margin-bottom": 8,
-  "control-center-margin-right": 0,
-  "control-center-margin-left": 0,
-  "notification-icon-size": 64,
-  "notification-body-image-height": 100,
-  "notification-body-image-width": 200,
-  "timeout": 10,
-  "timeout-low": 5,
-  "timeout-critical": 0,
-  "fit-to-screen": false,
-  "control-center-width": 400,
-  "control-center-height": 1064,
-  "notification-window-width": 500,
-  "keyboard-shortcuts": true,
+  "positionX": "right",
+  "positionY": "top",
+  "cssPriority": "user",
+  
+  "relative-timestamps": true,
+  "timeout": 6,
+  "timeout-low": 3,
+  "timeout-critical": 25,
+  "transition-time": 0,
   "image-visibility": "when-available",
-  "transition-time": 200,
   "hide-on-clear": false,
   "hide-on-action": true,
+
+  "fit-to-screen": true,
+  "control-center-exclusive-zone": true,
+  "notification-window-width": 500,
+  "control-center-width": 400,
+  "keyboard-shortcuts": true,
   "script-fail-notify": true,
+
   "widgets": [
       "title",
       "dnd",
       "notifications",
       "buttons-grid",
       "mpris",
+      "backlight",
       "volume",
-      "backlight"
+      "inhibitors"
   ],
   "widget-config": {
       "title": {
-          "text": "Notification Center",
+          "text": "Notifications",
           "clear-all-button": true,
-          "button-text": "Clear All"
+          "button-text": "󰹎 Dismiss"
       },
       "dnd": {
-          "text": "Do Not Disturb:"
+          "text": "do not disturb"
       },
       "label": {
           "max-lines": 1,
-          "text": "Notification Center"
+          "text": "OwO whats this ..."
       },
       "mpris": {
           "image-size": 96,
-          "image-radius": 12
+          "image-radius": 3
       },
       "volume": {
-          "label": "󰕾 "
+          "label": "󰝚 ",
+          "show-per-app": true,
+          "show-per-app-icon": true,
+          "empty-list-label": "󰎊 no media",
+          "expand-button-label": "󰍜",
+          "collapse-button-label": "󰮫",
+          "icon-size": 24,
+          "animation-type": "slide_down",
+          "animation-duration": 150
       },
       "backlight": {
-          "label": "󰃟 "
+          "label": " "
       },
       "buttons-grid": {
           "actions": [
                 {
                     "label": "󰌾",
                     "command": "swaylock -d"
-                },
-                {
-                    "label": "󰖩",
-                    "command": "iwgtk"
-                },
-                {
-                    "label": "󰍬",
-                    "command": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
                 },
                 {
                     "label": "󰤄",
@@ -81,8 +80,12 @@
                     "command": "systemctl reboot"
                 },
                 {
-                    "label": "󰐥",
+                    "label": "󰚥",
                     "command": "systemctl poweroff"
+                },
+                {
+                    "label": "󰍬",
+                    "command": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
                 }
           ]
       }

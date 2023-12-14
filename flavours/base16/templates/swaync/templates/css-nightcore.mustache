@@ -60,10 +60,9 @@ switch slider,
 
 /* -- Control Center -- */
 .control-center {
-    background: @bg0;
-    border: 3px solid @bg1;
-    border-radius: 12px;
-    padding: 8;
+    margin: 0 0 8 0px;
+    background: transparent;
+    padding: 16;
 }
 
 .control-center-list {
@@ -77,9 +76,31 @@ switch slider,
 }
 
 
+/* group title */
+.widget-title,
+.widget-dnd{
+    border-left: 2px solid @accent;
+    border-right: 2px solid @accent;
+    margin: 0px;
+    padding: 2 12px;
+}
+
+.widget-title {
+    border-top: 2px solid @accent;
+    border-radius: 8 8 0 0px;
+    margin-top: 12px;
+}
+
+.widget-dnd{
+    border-bottom: 2px solid @accent;
+    border-radius: 0 0 8 8px;
+    margin-bottom: 12px;
+}
+
+
 /* -- Title -- */
 .widget-title {
-    margin: 0 70px;
+    background: @bg0;
     font-weight: 900;
     font-size: 18px;
     color: @accent;
@@ -99,8 +120,7 @@ switch slider,
 
 /* -- DnD(Do not Disturb) Button -- */
 .widget-dnd {
-    margin: 0 105px;
-    padding: 0;
+    background: @bg0;
     font-size: 14px;
     color: @text;
 }
@@ -298,6 +318,7 @@ switch slider,
 
 /* -- Elements -- */
 .blank-window {
+    margin: 60px;
     background: transparent;
 }
 
