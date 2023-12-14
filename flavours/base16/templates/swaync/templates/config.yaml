@@ -1,0 +1,31 @@
+config_dev:
+  extension: .json
+  output: config
+
+config_clean:
+  extension: .json
+  output: config
+
+config_nightcore:
+  extension: .json
+  output: config
+
+config_pixel:
+  extension: .json
+  output: config
+
+css_dev:
+  extension: .css
+  output: style
+
+css_clean:
+  extension: .css
+  output: style
+
+css_nightcore:
+  extension: .css
+  output: style
+
+css_pixel:
+  extension: .css
+  output: style

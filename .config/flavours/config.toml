@@ -1,39 +1,51 @@
-# waybar
-[[items]]
-file = "~/.config/waybar/style.css"
-template = "waybar"
-subtemplate = "css_clean"
-rewrite = true
+###
+###                     ---   Flavours Config   ---      
+### Rename subtemplates and gtk theme to desired layout style when configuring
+### 
 
-[[items]]
-file = "~/.config/waybar/config"
-template = "waybar"
-subtemplate = "config_clean"
-rewrite = true
-hook = "killall waybar; waybar & disown"
+## -- hyprland --
+#[[items]]
+#file = "~/.config/hypr/theme/theme.conf"
+#template = "hyprland"
+#subtemplate = "clean"
+#rewrite = true
 
-# swaync
-[[items]]
-file = "~/.config/swaync/colors.css"
-template = "gtk"
-subtemplate = "css"
-rewrite = true
-hook = "swaync-client -rs"
 
-# tofi
-[[items]]
-file = "~/.config/tofi/config"
-template = "tofi"
-subtemplate = "clean"
-rewrite = true
+## -- waterfox --
+#[[items]]
+#file = "~/.waterfox/ywnasjr6.default-release/chrome/userContent.css"
+#template = "waterfox"
+#rewrite = false
+#start= "/* Start flavours */"
+#end = "/* End flavours */"
 
-# gtk
+
+## -- kitty --
+#[[items]]
+#file = "~/.config/kitty/kitty.conf"
+#template = "kitty"
+#subtemplate = "clean"
+#rewrite = true
+#hook = "kitty kill -SIGUSR1 $(pidof kitty)"
+
+
+## -- starship --
+#[[items]]
+#file = "~/.config/starship.toml"
+#template = "starship"
+#subtemplate = "clean"
+#rewrite = true
+
+
+## -- gtk --
+# gtk3
 [[item]]
 file = "~/.themes/solid_gtk/gtk-3.0/colors.css"
 template = "gtk"
 subtemplate = "gtk-3"
 rewrite = true
 
+# gtk2
 [[item]]
 file = "~/.themes/solid_gtk/gtk-2.0/gtkrc"
 template = "gtk"
@@ -41,47 +53,62 @@ subtemplate = "gtk-2"
 rewrite = true
 hook = "gsettings set org.gnome.desktop.interface gtk-theme dummy && gsettings set org.gnome.desktop.interface gtk-theme solid_gtk && gsettings set org.gnome.desktop.interface font-name \"JetBrainsMono Nerd Font\""
 
-# vim
 
-# kitty
+## -- tofi --
+#[[items]]
+#file = "~/.config/tofi/config"
+#template = "tofi"
+#subtemplate = "clean"
+#rewrite = true
+
+
+## -- waybar --
+# config
+#[[items]]
+#file = "~/.config/waybar/config"
+#template = "waybar"
+#subtemplate = "config-clean"
+#rewrite = true
+#hook = "killall waybar; waybar & disown"
+
+# css
+#[[items]]
+#file = "~/.config/waybar/style.css"
+#template = "waybar"
+#subtemplate = "css-clean"
+#rewrite = true
+
+
+## -- swaync --
+# config
 [[items]]
-file = "~/.config/kitty/kitty.conf"
-template = "kitty"
-subtemplate = "clean"
+file = "~/.config/swaync/config.json"
+template = "swaync"
+subtemplate = "config-clean"
 rewrite = true
-hook = "kitty kill -SIGUSR1 $(pidof kitty)"
+hook = "swaync-client -R"
 
-# waterfox
+# css
 [[items]]
-file = "~/.waterfox/ywnasjr6.default-release/chrome/userContent.css"
-template = "waterfox"
-rewrite = false
-start= "/* Start flavours */"
-end = "/* End flavours */"
-
-# swaylock
-[[items]]
-file = "~/.config/swaylock/config"
-template = "swaylock"
-subtemplate = "clean"
+file = "~/.config/swaync/style.css"
+template = "swaync"
+subtemplate = "css-clean"
 rewrite = true
+hook = "swaync-client -rs"
 
-# hyprland
-[[items]]
-file = "~/.config/hypr/theme/theme.conf"
-template = "hyprland"
-subtemplate = "clean"
-rewrite = true
 
-# swaybg
-[[items]]
-file = "~/.config/hypr/theme/swaybg.conf"
-template = "swaybg"
-rewrite = true
+## -- swaylock --
+#[[items]]
+#file = "~/.config/swaylock/config"
+#template = "swaylock"
+#subtemplate = "clean"
+#rewrite = true
 
-# starship
-[[items]]
-file = "~/.config/starship.toml"
-template = "starship"
-subtemplate = "clean"
-rewrite = true
+
+# -- swaybg --
+#[[items]]
+#file = "~/.config/hypr/theme/swaybg.conf"
+#template = "swaybg"
+#rewrite = true
+
+

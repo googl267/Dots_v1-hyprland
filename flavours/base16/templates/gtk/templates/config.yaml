@@ -1,7 +1,3 @@
-css:
-  extension: .css
-  output: colors
-
 gtk-2:
   extension:
   output: gtkrc

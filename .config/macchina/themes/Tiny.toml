@@ -1,26 +1,48 @@
-spacing = 1
+spacing = 0
 padding = 0
 hide_ascii = false
 prefer_small_ascii = true
-separator = ""
+separator = " "
+separator_color = "White"
 
 [palette]
 type = "Light"
-glyph = "󱟱 "
+glyph = "󰩖 "
 visible = true
 
 [bar]
-glyph = "♥ "
+glyph = "♥"
 symbol_open = '['
 symbol_close = ']'
 visible = false
 hide_delimiters = true
 
 [box]
-title = " Fetch "
+title = " Meow Meow !! "
 border = "rounded"
 visible = true
 
 [custom_ascii]
 color = "White"
-path = "~/.config/macchina/themes/ascii/kitty"
+path = "~/.config/macchina/themes/ascii/kitty_sparkle"
+
+[keys]
+host = ""
+kernel = ""
+os = ""
+machine = ""
+de = ""
+wm = ""
+distro = ""
+terminal = ""
+shell = ""
+packages = ""
+uptime = ""
+local_ip = ""
+memory = ""
+battery = ""
+backlight = ""
+resolution = ""
+cpu = ""
+cpu_load = ""
+
