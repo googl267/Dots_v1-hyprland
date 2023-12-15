@@ -7,7 +7,7 @@
 [[items]]
 file = "~/.config/hypr/theme/theme.conf"
 template = "hyprland"
-subtemplate = "nightcore"
+subtemplate = "dev"
 rewrite = true
 
 
@@ -24,7 +24,7 @@ end = "/* End flavours */"
 [[items]]
 file = "~/.config/kitty/kitty.conf"
 template = "kitty"
-subtemplate = "nightcore"
+subtemplate = "dev"
 rewrite = true
 hook = "kitty kill -SIGUSR1 $(pidof kitty)"
 
@@ -33,7 +33,7 @@ hook = "kitty kill -SIGUSR1 $(pidof kitty)"
 [[items]]
 file = "~/.config/starship.toml"
 template = "starship"
-subtemplate = "nightcore"
+subtemplate = "dev"
 rewrite = true
 
 
@@ -41,27 +41,27 @@ rewrite = true
 # gtk3
 # solid_gtk
 [[item]]
-file = "~/.themes/solid_gtk/gtk-3.0/colors.css"
+file = "~/.themes/sharp_gtk/gtk-3.0/colors.css"
 template = "gtk"
 subtemplate = "gtk-3"
 rewrite = true
 
 # gtk2
 [[item]]
-file = "~/.themes/solid_gtk/gtk-2.0/gtkrc"
+file = "~/.themes/sharp_gtk/gtk-2.0/gtkrc"
 template = "gtk"
 subtemplate = "gtk-2"
 rewrite = true
 
 # apply gtk theme
-hook = "gsettings set org.gnome.desktop.interface gtk-theme dummy && gsettings set org.gnome.desktop.interface gtk-theme solid_gtk && gsettings set org.gnome.desktop.interface font-name \"JetBrainsMono Nerd Font\""
+hook = "gsettings set org.gnome.desktop.interface gtk-theme dummy && gsettings set org.gnome.desktop.interface gtk-theme sharp_gtk && gsettings set org.gnome.desktop.interface font-name \"JetBrainsMono Nerd Font\""
 
 
 ## -- tofi --
 [[items]]
 file = "~/.config/tofi/config"
 template = "tofi"
-subtemplate = "nightcore"
+subtemplate = "dev"
 rewrite = true
 
 
@@ -70,14 +70,14 @@ rewrite = true
 [[items]]
 file = "~/.config/waybar/config"
 template = "waybar"
-subtemplate = "config-nightcore"
+subtemplate = "config-dev"
 rewrite = true
 
 # css
 [[items]]
 file = "~/.config/waybar/style.css"
 template = "waybar"
-subtemplate = "css-nightcore"
+subtemplate = "css-dev"
 rewrite = true
 
 # reload waybar
@@ -89,7 +89,7 @@ hook = "killall waybar; waybar & disown"
 [[items]]
 file = "~/.config/swaync/config.json"
 template = "swaync"
-subtemplate = "config-nightcore"
+subtemplate = "config-dev"
 rewrite = true
 hook = "swaync-client -R"
 
@@ -97,7 +97,7 @@ hook = "swaync-client -R"
 [[items]]
 file = "~/.config/swaync/style.css"
 template = "swaync"
-subtemplate = "css-nightcore"
+subtemplate = "css-dev"
 rewrite = true
 
 # reload swaync
@@ -108,7 +108,7 @@ hook = "swaync-client -rs"
 [[items]]
 file = "~/.config/swaylock/config"
 template = "swaylock"
-subtemplate = "nightcore"
+subtemplate = "dev"
 rewrite = true
 
 
