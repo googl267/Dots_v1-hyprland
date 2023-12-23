@@ -1,25 +1,29 @@
 # Hyprland Dots V1
-Im tired of not being able to use whatever colors I want for all my programs! Down with having tons of diffrent config files to edit! My dots use bash scripts for easy switching of colors and layouts separately
+Im tired of not being able to use whatever colors I want for all my programs! Down with having tons of diffrent config files to edit everytime I want to change a couple of colors!
 > [!NOTE]  
-> This has been my very first time both using arch, git, and scripting(I'm very proud of myself despite how basic most my useage has been). My scripts are very very very messy! However I found a cool tool called [flavours](https://github.com/misterio77/flavours) and will be replacing my color scripts with that
+> I'm a newbie and since the start of this project I jumped from Mint to Arch, figured out how to use git, and wrote some simple bash scripts so dont judge my config quality too harshly lol. I plan to write my own theming tool in GO as my first real programming project so look out for that! Any suggestions, comments, or criticism would be hugely appreciated!
 > 
-> I plan on replacing almost every componate with eww or ags in V2!
 
 ## Screenshots
 ### Clean
+- Mononoki Nerd Font, side-bar, subtle effects and gental animations
 
 ### Dev
+- JetBrainsMono and FiraCode Nerd Fonts, top-bar, no effects and swift animations
 
 ### Nightcore
+- Hurmit Nerd Font, bottom-bar with equalizer, transparency plus shadows plus blur with popping animations 
 
 ### Pixel
+- BigBlueTermPlus Nerd Font, top-bar, sharp shadows and animations
+
+### Rainy
+- WIP, using for tutorial
 
 
-## Useage
-you can create custom layous in flavours. I'll write a walkthrough when I get the chance
-
+## Base16
 <details open> 
-  <summary>How I have Base16 files setup</summary>
+  <summary>How I have Base16 files setup for applications</summary>
 
   - base00  background
   - base01  background +
@@ -38,52 +42,37 @@ you can create custom layous in flavours. I'll write a walkthrough when I get th
   - base0F  brown
 </details>
 
-## Programs
-- [X] hyprland
-- [X] bar
-- [X] menu
-- [X] notifications
-- [X] lockscreen
-- [X] wallpaper
-- [X] gtk / qt
-- [X] browser
-- [X] terminal
-
 ### Programs
-These are programs that are needed for everything to function out of the box, however I encorage you to modify my dots to your needs
+The programs I use 
 <details open> 
-  <summary><h4>Default Programs</h4></summary>
+  <summary><h4>Main Programs</h4></summary>
   
-  - Flavours
-  - hyprland
-  - hyprpaper
-  - hyprpicker
-  - hyprshot
-  - swayidle
-  - swaylock-effects
-  - swaync
-  - pipewire
-  - kitty
-  - waybar-hyprland-cava, waybar-updates, and waybar-mpris
-  - tofi
-  - mpv
-  - bluez and blueman
-  - pauvecontrol
-  - playerctl and brightnessctl
+  - Flavours CLI color switcher for BASE16
+  - hyprland as window manager/compositor
+  - swayidle and swaylock-effects as lockscreen
+  - swaync as notifications
+  - kitty as terminal
+  - waybar-hyprland-cava, waybar-updates, and waybar-mpris as my bar
+  - tofi as my program menu
+  - mpv as my video player
+  - bluez and blueman for bluetooth GUI
+  - pauvecontrol for audio GUI
 </details>
 
 <details open> 
-  <summary><h4>Default Fonts</h4></summary>
+  <summary><h4>Fonts</h4></summary>
   
   - jetbrains nerd font
   - firacode nerd font
+  - mononoki nerd font
   - bigblueterm437 nerd font
   - hurmit nerd font
   - victormono nerd font
+  - nerd font icons font
 </details>
 
 <details open> 
-  <summary><h4>Default GTK Stuff</h4></summary>
+  <summary><h4>GTK Stuff</h4></summary>
   
   - breezex-cursor-theme
   - papirus-icons and papirus-folders
@@ -98,18 +87,15 @@ Adding layout and schemes tutorial will go here when I get the chance lol
 
 ## Todo
 - [X] replace color change script with [flavours](https://github.com/misterio77/flavours)
+- [ ] write a program in GO for layout support
+- [ ] make tutorial
 
 #### V2
 - [ ] give the repo a cool name
 - [ ] ! replace everything with eww or ags
 - [ ] make fire/waterfox theme + startpage
-- [ ] remake Sharp-GTK theme to use base16
-
-#### V3
-- [ ] simple GUI for changing colors/layout script
-- [ ] cleanup scripts
-- [ ] global install script
+- [ ] remake myagko's Sharp-GTK theme to use all of base16
 
 # Credits
 **Sharp-GTK:** [(made by)](https://github.com/myagko) the gtk theme that saved me from needing to make my own | [**Simple Fox:**](https://github.com/migueravila/SimpleFox) slightly modified for my waterfox theme | [**Zabooby
- MPV:**](https://github.com/Zabooby/mpv-config) this amazing MPV config I stole | [**Boo SDDM:**](https://github.com/PROxZIMA/boo-sddm) for the sddm theme | Layouts created by me with inspo from [r/unixporn](https://www.reddit.com/r/unixporn/) | All colors are various [base16](https://github.com/chriskempson/base16-schemes-source) themes
+ MPV:**](https://github.com/Zabooby/mpv-config) this amazing MPV config I stole | Layouts created by me with inspo from [r/unixporn](https://www.reddit.com/r/unixporn/) | All colors are various [base16](https://github.com/chriskempson/base16-schemes-source) themes
