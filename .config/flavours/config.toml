@@ -37,6 +37,13 @@ subtemplate = "dev"
 rewrite = true
 
 
+## -- Neovim --
+[[items]]
+file = "~/.config/nvim/colors/default-base16.lua"
+template = "neovim"
+rewrite = true
+
+
 ## -- gtk --
 # gtk3
 # solid_gtk
@@ -54,7 +61,7 @@ subtemplate = "gtk-2"
 rewrite = true
 
 # apply gtk theme
-hook = "gsettings set org.gnome.desktop.interface gtk-theme dummy && gsettings set org.gnome.desktop.interface gtk-theme sharp_gtk && gsettings set org.gnome.desktop.interface font-name \"JetBrainsMono Nerd Font\""
+hook = "gsettings set org.gnome.desktop.interface gtk-theme dummy && gsettings set org.gnome.desktop.interface gtk-theme sharp_gtk && gsettings set org.gnome.desktop.interface font-name \"Mononoki Nerd Font 10\""
 
 
 ## -- tofi --
