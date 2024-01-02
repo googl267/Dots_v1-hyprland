@@ -1,4 +1,4 @@
-#Programs and their configs explained :3
+# Programs and their configs explained :3
 (really just here so I can remember what I use)
 
 #### Cue
