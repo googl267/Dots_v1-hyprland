@@ -1,0 +1,108 @@
+[defaults]
+file = " "
+directory = " "
+
+[directory_exact]
+Desktop = " "
+Documents = "󱔘 "
+Downloads = " "
+Games = "󰺶 "
+Music = "󰝚 "
+Pictures = " "
+Videos = " "
+googl = "󱂵 "
+
+[file_exact]
+".gitignore" = " "
+LICENSE = " "
+Makefile = " "
+Dockerfile = " "
+config = " "
+# ...
+
+[ext]
+# text files
+js = "󰌞 "
+docx = " "
+rs = "󱘗 "
+txt = " "
+sh = " "
+bash = " "
+bin = " "
+css = " "
+html = " "
+md = "󰎞 "
+toml = " "
+mustache = "󱗞 "
+json = " "
+cs = " "
+c = " "
+cpp = " "
+java = "󰬷 "
+jar = "󰬷 "
+kt = "󱈙 "
+kts = "󱈙 "
+ktm = "󱈙 "
+go = " "
+lua = "󰢱 "
+conf = " "
+
+# media
+png     = "󰔉 "
+PNG     = "󰔉 "
+jpg     = "󰔉 "
+JPG     = "󰔉 "
+jpeg    = "󰔉 "
+JPEG    = "󰔉 "
+bmp     = "󰔉 "
+gif     = "󰔉 "
+ico     = "󰔉 "
+svg     = "󰔉 "
+svgz    = "󰔉 "
+tif     = "󰔉 "
+tiff    = "󰔉 "
+wbmp    = "󰔉 "
+webp    = "󰔉 "
+exr    = "󰔉 "
+ora    = "󰔉 "
+
+# music
+mp3 = "󰻂 "
+wav = "󰻂 "
+flac = "󰻂 "
+ogg = "󰻂 "
+opus = "󰻂 "
+weba = "󰻂 "
+
+# video
+mp4 = "󰿎 "
+mov = "󰿎 "
+avi = "󰿎 "
+wmv = "󰿎 "
+mkv = "󰿎 "
+webm = "󰿎 "
+avchd = "󰿎 "
+mpeg = "󰿎 "
+ogv = "󰿎 "
+m4v = "󰿎 "
+
+# archives
+zip = "󰛫 "
+tar = "󰛫 "
+7z = "󰛫 "
+rar = "󰛫 "
+gz = "󰛫 "
+
+# fonts
+otb = "󰛖 "
+otf = "󰛖 "
+ttf = "󰛖 "
+woff = "󰛖 "
+bdf = "󰛖 "
+
+# program files
+blend = "󰂫 "
+blend1 = "󰂫 "
+kra = " "
+xcf = " "
+# ...

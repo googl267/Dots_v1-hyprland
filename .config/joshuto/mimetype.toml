@@ -1,0 +1,57 @@
+[class]
+image_default   = [{ command = "qimgv", fork = true, silent = true }]
+
+video_default   = [{ command = "mpv", fork = true, silent = true }]
+
+music_default   = [{ command = "cue", fork = false, silent = false }]
+
+text_default    = [{ command = "nvim", fork = false, silent = false }]
+
+[extension]
+# images
+png.inherit     = "image_default"
+PNG.inherit     = "image_default"
+jpg.inherit     = "image_default"
+JPG.inherit     = "image_default"
+jpeg.inherit    = "image_default"
+JPEG.inherit    = "image_default"
+bmp.inherit     = "image_default"
+gif.inherit     = "image_default"
+ico.inherit     = "image_default"
+svg.inherit     = "image_default"
+svgz.inherit    = "image_default"
+tif.inherit     = "image_default"
+tiff.inherit    = "image_default"
+wbmp.inherit    = "image_default"
+webp.inherit    = "image_default"
+
+# music
+mp3.inherit     = "music_default"
+wav.inherit     = "music_default"
+flac.inherit    = "music_default"
+ogg.inherit     = "music_default"
+opus.inherit    = "music_default"
+weba.inherit    = "music_default"
+
+# video
+mp4.inherit     = "video_default"
+mov.inherit     = "video_default"
+avi.inherit     = "video_default"
+wmv.inherit     = "video_default"
+mkv.inherit     = "video_default"
+webm.inherit    = "video_default"
+avchd.inherit   = "video_default"
+mpeg.inherit  = "video_default"
+ogv.inherit     = "video_default"
+m4v.inherit     = "video_default"
+
+
+[mimetype]
+
+# text/*
+[mimetype.text]
+inherit = "text_default"
+
+# application/octet-stream
+[mimetype.application.subtype.octet-stream]
+inherit = "video_default"
