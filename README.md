@@ -1,7 +1,6 @@
 # Hyprland Dots V1
-Im tired of not being able to use whatever colors I want for all my programs! Down with having tons of diffrent config files to edit everytime I want to change a couple of colors!
 > [!NOTE]  
-> I'm a newbie and since the start of this project I jumped from Mint to Arch, figured out how to use git, and wrote some simple bash scripts so dont judge my config quality too harshly lol. I plan to write my own theming tool in GO as my first real programming project so look out for that! Any suggestions, comments, or criticism would be hugely appreciated!
+> I'm a newbie and since the start of this project I jumped from Mint to Arch, figured out how to use git, and wrote some simple bash scripts, so dont judge my config quality too harshly lol. I plan to write my own theming tool as my first real programming project so look out for that! Any suggestions, comments, or criticism would be hugely appreciated!
 > 
 
 ## Screenshots
@@ -42,21 +41,32 @@ Im tired of not being able to use whatever colors I want for all my programs! Do
   - base0F  brown
 </details>
 
-### Programs
-The programs I use 
+### As Seen in Screenshots
 <details open> 
-  <summary><h4>Main Programs</h4></summary>
-  
-  - Flavours CLI color switcher for BASE16
-  - hyprland as window manager/compositor
-  - swayidle and swaylock-effects as lockscreen
-  - swaync as notifications
-  - kitty as terminal
-  - waybar-hyprland-cava, waybar-updates, and waybar-mpris as my bar
-  - tofi as my program menu
-  - mpv as my video player
-  - bluez and blueman for bluetooth GUI
-  - pauvecontrol for audio GUI
+  <summary><h4>GUI</h4></summary>
+
+  - Kitty (terminal)
+  - LibreWolf + Floorp (browser)
+  - Tofi (launcher)
+  - Waybar (bar)
+  - Sway Notification Center (notifications)
+  - Swaylock-effects (lockscreen)
+  - Qimgv (image viewer)
+  - MPV (video player)
+  - Foliate (book/pdf reader)
+  - Thunar (file manager)
+  - Dorion (discord)
+</details>
+
+<details open> 
+  <summary><h4>TUI</h4></summary>
+
+  - Zsh (shell)
+  - Macchina (fetch)
+  - Starship (prompt)
+  - Neovim (editor)
+  - Joshuto (file browser)
+  - Bottom (task viewer)
 </details>
 
 <details open> 
@@ -87,15 +97,13 @@ Adding layout and schemes tutorial will go here when I get the chance lol
 
 ## Todo
 - [X] replace color change script with [flavours](https://github.com/misterio77/flavours)
-- [ ] write a program in GO for layout support
 - [ ] make tutorial
+- [ ] writing a fork/rewrite of flavours to support more features
 
 #### V2
 - [ ] give the repo a cool name
 - [ ] ! replace everything with eww or ags
-- [ ] make fire/waterfox theme + startpage
-- [ ] remake myagko's Sharp-GTK theme to use all of base16
 
 # Credits
-**Sharp-GTK:** [(made by)](https://github.com/myagko) the gtk theme that saved me from needing to make my own | [**Simple Fox:**](https://github.com/migueravila/SimpleFox) slightly modified for my waterfox theme | [**Zabooby
+**Sharp-GTK:** [(made by)](https://github.com/myagko) the gtk theme that saved me from needing to make my own | [**WaveFox:**](https://github.com/QNetITQ/WaveFox) slightly modified for my waterfox theme | [**Zabooby
  MPV:**](https://github.com/Zabooby/mpv-config) this amazing MPV config I stole | Layouts created by me with inspo from [r/unixporn](https://www.reddit.com/r/unixporn/) | All colors are various [base16](https://github.com/chriskempson/base16-schemes-source) themes
