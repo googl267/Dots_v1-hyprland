@@ -1,31 +1,7 @@
-config_dev:
+config:
   extension: 
   output: config
 
-config_clean:
-  extension: 
-  output: config
-
-config_nightcore:
-  extension: 
-  output: config
-
-config_pixel:
-  extension: 
-  output: config
-
-css_dev:
-  extension: .css
-  output: style
-
-css_clean:
-  extension: .css
-  output: style
-
-css_nightcore:
-  extension: .css
-  output: style
-
-css_pixel:
+css:
   extension: .css
   output: style

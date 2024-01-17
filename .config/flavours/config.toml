@@ -7,24 +7,13 @@
 [[items]]
 file = "~/.config/hypr/theme/theme.conf"
 template = "hyprland"
-subtemplate = "dev"
 rewrite = true
-
-
-## -- waterfox --
-[[items]]
-file = "~/.waterfox/ywnasjr6.default-release/chrome/userContent.css"
-template = "waterfox"
-rewrite = false
-start= "/* Start flavours */"
-end = "/* End flavours */"
 
 
 ## -- kitty --
 [[items]]
 file = "~/.config/kitty/kitty.conf"
 template = "kitty"
-subtemplate = "dev"
 rewrite = true
 hook = "kitty kill -SIGUSR1 $(pidof kitty)"
 
@@ -33,7 +22,6 @@ hook = "kitty kill -SIGUSR1 $(pidof kitty)"
 [[items]]
 file = "~/.config/starship.toml"
 template = "starship"
-subtemplate = "dev"
 rewrite = true
 
 
@@ -61,14 +49,13 @@ subtemplate = "gtk-2"
 rewrite = true
 
 # apply gtk theme
-hook = "gsettings set org.gnome.desktop.interface gtk-theme dummy && gsettings set org.gnome.desktop.interface gtk-theme sharp_gtk && gsettings set org.gnome.desktop.interface font-name \"Mononoki Nerd Font 10\""
+hook = "gsettings set org.gnome.desktop.interface gtk-theme dummy && gsettings set org.gnome.desktop.interface gtk-theme solid_gtk && gsettings set org.gnome.desktop.interface font-name \"Mononoki Nerd Font 10\""
 
 
 ## -- tofi --
 [[items]]
 file = "~/.config/tofi/config"
 template = "tofi"
-subtemplate = "dev"
 rewrite = true
 
 
@@ -77,14 +64,14 @@ rewrite = true
 [[items]]
 file = "~/.config/waybar/config"
 template = "waybar"
-subtemplate = "config-dev"
+subtemplate = "config"
 rewrite = true
 
 # css
 [[items]]
 file = "~/.config/waybar/style.css"
 template = "waybar"
-subtemplate = "css-dev"
+subtemplate = "css"
 rewrite = true
 
 # reload waybar
@@ -96,7 +83,7 @@ hook = "killall waybar; waybar & disown"
 [[items]]
 file = "~/.config/swaync/config.json"
 template = "swaync"
-subtemplate = "config-dev"
+subtemplate = "config"
 rewrite = true
 hook = "swaync-client -R"
 
@@ -104,7 +91,7 @@ hook = "swaync-client -R"
 [[items]]
 file = "~/.config/swaync/style.css"
 template = "swaync"
-subtemplate = "css-dev"
+subtemplate = "css"
 rewrite = true
 
 # reload swaync
@@ -115,7 +102,6 @@ hook = "swaync-client -rs"
 [[items]]
 file = "~/.config/swaylock/config"
 template = "swaylock"
-subtemplate = "dev"
 rewrite = true
 
 
