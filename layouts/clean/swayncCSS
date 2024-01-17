@@ -1,0 +1,309 @@
+@define-color bg0       #{{base00-hex}};
+@define-color bg1       #{{base01-hex}};
+@define-color bg2       #{{base02-hex}};
+@define-color bg3       #{{base03-hex}};
+@define-color bg4       #{{base04-hex}};
+@define-color text      #{{base05-hex}};
+@define-color accentD   #{{base06-hex}};
+@define-color accent    #{{base07-hex}};
+@define-color red       #{{base08-hex}};
+@define-color orange    #{{base09-hex}};
+@define-color yellow    #{{base0A-hex}};
+@define-color green     #{{base0B-hex}};
+@define-color aqua      #{{base0C-hex}};
+@define-color blue      #{{base0D-hex}};
+@define-color purple    #{{base0E-hex}};
+@define-color brown     #{{base0F-hex}};
+
+* {
+    font-family: JetBrainsMono Nerd Font;
+
+}
+
+
+/* -- global things to keep things clean -- */
+.widget-title,
+button,
+button:hover,
+.widget-dnd,
+switch,
+switch slider,
+.widget-mpris,
+.widget-mpris-player,
+.widget-mpris-title,
+.widget-mpris-subtitle,
+.widget-volume,
+.per-app-volume,
+.widget-backlight,
+.widget-buttons-grid,
+.per-app-volume,
+.close-button,
+.control-center,
+.control-center-list,
+.control-center-list-placeholder,
+.notification-content,
+.notification-default-action,
+.control-center .notification-row,
+.notification-row,
+.notification,
+.summary,
+.time,
+.body,
+.body-image{
+    color: @text;
+    outline: none;
+    border: none;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+
+/* -- Control Center -- */
+.control-center {
+    background: @bg0;
+    border: 3px solid @bg1;
+    border-radius: 12px;
+    padding: 8;
+}
+
+.control-center-list {
+    background: transparent
+}
+
+.control-center-list-placeholder {
+    color: @accent;
+    opacity: 0.7;
+    font-weight: bolder;
+}
+
+
+/* -- Title -- */
+.widget-title {
+    margin: 0 70px;
+    font-weight: 900;
+    font-size: 18px;
+    color: @accent;
+}
+
+.widget-title > button {
+    color: @red;
+    background: transparent;
+    border-radius: 3px;
+}
+
+.widget-title > button:hover {
+    color: @bg0;
+    background: @red;
+}
+
+
+/* -- DnD(Do not Disturb) Button -- */
+.widget-dnd {
+    margin: 0 105px;
+    padding: 0;
+    font-size: 14px;
+    color: @text;
+}
+
+.widget-dnd > switch {
+    border-radius: 3px;
+    background: @bg2;
+}
+.widget-dnd > switch:checked {
+    background: @bg2;
+}
+
+.widget-dnd > switch slider {
+    border: 2px solid @accent;
+    background: @bg0;
+    border-radius: 5px;
+}
+.widget-dnd > switch:checked slider {
+    border: 2px solid @red;
+}
+
+
+/* -- Notifications -- */
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+}
+
+.notification-row {
+    margin: 8px;
+    padding: 0;
+}
+
+.notification {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+/* - notification content and colors - */
+.notification-content,
+.notification-default-action,
+.notification-action { border-radius: 8px; }
+.notification-default-action { margin: 0; padding: 0; }
+.notification-content {
+    background: @bg0;
+    border: 2px solid @bg3;
+    color: @text;
+    padding: 5px;
+    margin: 0;
+}
+
+.notification-action {
+    border: 2px solid #7aa2f7;
+    border-top: none;
+}
+
+.notification-default-action {
+    margin: 0px;
+}
+.notification-default-action:hover,
+.notification-action:hover {
+    color: @text;
+    background: @bg3;
+}
+
+.body-image {
+}
+
+.summary {
+    font-size: 14px;
+    font-weight: 900;
+    background: transparent;
+    color: @accent;
+}
+
+.time {
+    font-size: 12px;
+    font-weight: 700;
+    background: transparent;
+    color: @bg4;
+    margin-right: 0;
+}
+
+.body {
+    font-size: 12px;
+    font-weight: 400;
+    background: transparent;
+    color: @text;
+}
+
+.close-button {
+    color: @bg4;
+    background: transparent;
+    padding: 0;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.close-button:hover {
+    color: @red;
+}
+
+
+/* -- Bottom Widgets Globals -- */
+.widget-buttons-grid,
+.widget-mpris,
+.widget-volume,
+.widget-backlight,
+.widget-volume > box > button {
+    margin: 0;
+    padding: 12px;
+    color: @text;
+    background: @bg0;
+    border-left: 2px solid @accent;
+    border-right: 2px solid @accent;
+    font-size: 24px;
+    border-radius: 0px;
+}
+
+
+/* -- Buttons Grid -- */
+.widget-buttons-grid{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top: 2px solid @accent;
+    padding: 8px;
+    
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button{
+    border-radius: 3px;
+    margin: 4px;
+    padding: 2 16px;
+    background: @bg1;
+    color: @accent;
+    font-size: 28px;
+}
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+    background: @accent;
+    color: @bg0;
+}
+
+
+/* -- MPRIS -- */
+.widget-mpris {
+    
+}
+
+.widget-mpris-player {
+    padding: 0;
+    margin: 0;
+}
+
+.widget-mpris-title {
+    font-weight: 900;
+    color: @text;
+    font-size: 16px;
+}
+
+.widget-mpris-subtitle {
+    font-weight: 500;
+    color: @bg4;
+    font-size: 12px;
+}
+
+
+/* -- Backlight -- */
+.widget-backlight {
+}
+
+
+/* -- Volume -- */
+.widget-volume {
+    border-bottom: 2px solid @accent;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.widget-volume > box > button {
+    margin: 0;
+    padding: 0 12 0 8px;
+    border: none;
+    border-radius: 3px;
+}
+.widget-volume > box > button:hover {
+    background: @accent;
+    color: @bg0;
+}
+
+.per-app-volume {
+    margin: 2 6px;
+    padding: 0px;
+}
+
+
+/* -- Elements -- */
+.blank-window {
+    background: transparent;
+}
+
+progressbar,
+progress,
+trough {
+    background: @bg2;
+    border-radius: 3px;
+}

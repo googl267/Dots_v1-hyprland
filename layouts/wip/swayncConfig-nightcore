@@ -1,0 +1,93 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "positionX": "right",
+  "positionY": "top",
+  "cssPriority": "user",
+  
+  "relative-timestamps": true,
+  "timeout": 6,
+  "timeout-low": 3,
+  "timeout-critical": 25,
+  "transition-time": 250,
+  "image-visibility": "when-available",
+  "hide-on-clear": false,
+  "hide-on-action": true,
+
+  "fit-to-screen": true,
+  "control-center-exclusive-zone": true,
+  "notification-window-width": 500,
+  "control-center-width": 400,
+  "keyboard-shortcuts": true,
+  "script-fail-notify": true,
+
+  "widgets": [
+      "notifications",
+      "title",
+      "dnd",
+      "buttons-grid",
+      "mpris",
+      "backlight",
+      "volume",
+      "inhibitors"
+  ],
+  "widget-config": {
+      "title": {
+          "text": "Notifications",
+          "clear-all-button": true,
+          "button-text": "󰹎 Dismiss"
+      },
+      "dnd": {
+          "text": "do not disturb"
+      },
+      "label": {
+          "max-lines": 1,
+          "text": "OwO whats this ..."
+      },
+      "mpris": {
+          "image-size": 96,
+          "image-radius": 3
+      },
+      "volume": {
+          "label": "󰝚 ",
+          "show-per-app": true,
+          "show-per-app-icon": true,
+          "empty-list-label": "󰎊 no media",
+          "expand-button-label": "󰍜",
+          "collapse-button-label": "󰮫",
+          "icon-size": 24,
+          "animation-type": "slide_down",
+          "animation-duration": 150
+      },
+      "backlight": {
+          "label": " "
+      },
+      "buttons-grid": {
+          "actions": [
+                {
+                    "label": "󰌾",
+                    "command": "swaylock -d"
+                },
+                {
+                    "label": "󰤄",
+                    "command": "systemctl suspend"
+                },
+                {
+                    "label": "󰍃",
+                    "command": "hyprctl dispatch exit"
+                },
+                {
+                    "label": "󰜉",
+                    "command": "systemctl reboot"
+                },
+                {
+                    "label": "󰚥",
+                    "command": "systemctl poweroff"
+                },
+                {
+                    "label": "󰍬",
+                    "command": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+                }
+          ]
+      }
+  }
+}

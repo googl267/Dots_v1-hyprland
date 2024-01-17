@@ -1,0 +1,169 @@
+@define-color bg0       #{{base00-hex}};
+@define-color bg1       #{{base01-hex}};
+@define-color bg2       #{{base02-hex}};
+@define-color bg3       #{{base03-hex}};
+@define-color bg4       #{{base04-hex}};
+@define-color text      #{{base05-hex}};
+@define-color accentD   #{{base06-hex}};
+@define-color accent    #{{base07-hex}};
+@define-color red       #{{base08-hex}};
+@define-color orange    #{{base09-hex}};
+@define-color yellow    #{{base0A-hex}};
+@define-color green     #{{base0B-hex}};
+@define-color aqua      #{{base0C-hex}};
+@define-color blue      #{{base0D-hex}};
+@define-color purple    #{{base0E-hex}};
+@define-color brown     #{{base0F-hex}};
+
+    * {
+        /* intall `otf-font-awesome` and then add below if not using a nerd font */
+        font-family: BigBlueTerm437 Nerd Font;
+    }
+
+    window#waybar {
+        border: 4px solid @bg0;
+        background-color: @bg0;
+        transition-property: background-color;
+        transition-duration: .5s;
+        box-shadow: 0px 2px @accent inset, 0px -2px @accent inset;
+        
+    }
+
+    /*
+        Global Config 
+        add your moduals here to theme them
+    */
+    #clock,
+    #battery,
+    #pulseaudio,
+    #tray,
+    #idle_inhibitor,
+    #user,
+    #workspaces,
+    #custom-pacman,
+    #backlight,
+    #cpu,
+    #memory,
+    #disk,
+    #temperature{
+        font-size: 14px;
+        font-weight: 400;
+        padding: 4 8px;
+        margin: 0 0px;
+        background-color: @bg0;
+        border-radius: 0px;
+        color: @text;
+        border-top: 4px solid @bg0;
+        border-bottom: 4px solid @bg0;
+        box-shadow: 0px 2px @accent inset, 0px -2px @accent inset;
+    }
+    
+
+    button {
+        /* Use box-shadow instead of border so the text isn't offset */
+        border: none;
+    }
+    
+    /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+    button:hover {
+        background: inherit;
+        border-radius: 0;
+    }
+
+
+    /*
+        Indivisual Configs
+        if anything appears weird or needs tweaking add '#ModualName' and tweak it
+    */
+
+    #battery.charging, #battery.plugged {
+        color: @green;
+    }
+    
+    #battery.critical:not(.charging) {
+        color: @red;
+    }
+
+    #backlight.low {
+        color: @blue;
+    }
+
+    #backlight.high {
+        color: @yellow;
+    }
+
+    #clock {
+        font-weight: 900;
+        border-right: 4px solid @bg0;
+        padding-right: 24px;
+        box-shadow: 0px 2px @accent inset, 0px -2px @accent inset, -2px 0px @accent inset;
+    }
+
+    #user {
+        font-weight: 900;
+        border-left: 4px solid @bg0;
+        padding-left: 24px;
+        box-shadow: 0px 2px @accent inset, 0px -2px @accent inset, 2px 0px @accent inset;
+    }
+
+
+    /* Workspaces needs weird margins because of horizontal text, adjust if changing font size/icons */
+    #workspaces {
+        font-weight: 900;
+    }
+
+    #workspaces button {
+        color: @bg3;
+        margin: 0 5px;
+    }
+
+    #workspaces button.persistent {
+        color: @text;
+    }
+
+    #workspaces button.empty {
+        color: @bg3;
+    }
+
+    #workspaces button.active {
+        color: @accent;
+    }
+    
+    #workspaces button:hover {
+        color: @yellow;
+    }
+    
+    #workspaces button.urgent {
+        color: @blue;
+    }
+
+    #cpu {
+        color: @blue;
+    }
+
+    #memory {
+        color: @yellow;
+    }
+
+    #temperature {
+        color: @red;
+    }
+
+    #custom-pacman.pending-updates {
+        color: @red;
+    }
+
+
+    #pulseaudio.muted {
+        color: @red;
+    }
+    
+    #idle_inhibitor{
+        padding-left: 3px;
+        padding-right: 7px;
+    }
+
+    #idle_inhibitor.activated {
+        color: @red;
+    }
+    
